@@ -1,0 +1,8 @@
+Reference/**
+
+*.aux
+*.log
+*.toc
+
+*.swp
+
