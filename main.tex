@@ -6,6 +6,7 @@
 \usepackage{tocloft}
 \usepackage{nameref}
 \usepackage{verbatim}
+\usepackage{enumitem}
 
 \pagestyle{fancy}
 \setlength{\headsep}{0.1cm}
@@ -29,15 +30,15 @@
 	mathescape=true,
 	tabsize=1,
 	numbers=left,
-	numbersep=4pt,
-	numberstyle=\color{numbercolor},
+	numbersep=3.5pt,
+	numberstyle=\tiny\bfseries\ttfamily\color{numbercolor},
 	commentstyle=\color{commentcolor},
 	keywordstyle=\color{keywordcolor},
 }
 
-\title{\LARGE{Luna's Magic Reference}}
+\title{Luna's Magic Reference} 
 \author{Suzune Nisiyama}
-\date{\today}
+\date{\today\\ \vspace{100pt} \noindent\rule{\textwidth}{1pt}\\ \vspace{100pt} \normalsize\begin{raggedright}\input{LICENSE}\end{raggedright}}
 
 \begin{document}
 	\maketitle
@@ -49,6 +50,9 @@
 		\tableofcontents
 		\newpage
 		\begin{spacing}{0.6}
+		\section{Environment}
+			\subsection{Vimrc}
+				\lstinputlisting[language=]{src/environment/vimrc}
 		\section{Data Structure}
 			\subsection{KD tree}
 				\lstinputlisting{src/data_structure/kd_tree.cpp}
@@ -109,10 +113,22 @@
 				\lstinputlisting{src/graph/hopcoft_karp.cpp}
 			\subsection{Kuhn-Munkres algorithm}
 				\lstinputlisting{src/graph/kuhn_munkres.cpp}
+			\subsection{Blossom algorithm}
+				\lstinputlisting{src/graph/blossom.cpp}
+			\subsection{Weighted blossom algorithm}
+				\lstinputlisting{src/graph/weighted_blossom.cpp}
 			\subsection{Maximum flow}
 				\lstinputlisting{src/graph/maximum_flow.cpp}
 			\subsection{Minimum cost flow}
 				\lstinputlisting{src/graph/minimum_cost_flow.cpp}
+			\subsection{Stoer Wagner algorithm}
+				\lstinputlisting{src/graph/stoer_wagner.cpp}
+			\subsection{DN maximum clique}
+				\lstinputlisting{src/graph/maximum_clique.cpp}
+		\section{Appendix}
+			\subsection{Calculus table}
+				\input{tex/derivative.tex}
+				\input{tex/integration.tex}
 		\end{spacing}
 		\endgroup
 	\end{multicols}
