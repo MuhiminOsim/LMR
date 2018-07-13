@@ -2,3 +2,33 @@
 \contentsline {subsection}{\numberline {1.1}KD tree}{2}
 \contentsline {subsection}{\numberline {1.2}Splay}{2}
 \contentsline {subsection}{\numberline {1.3}Link-cut tree}{2}
+\contentsline {section}{\numberline {2}Formula}{2}
+\contentsline {subsection}{\numberline {2.1}Zeller’s congruence}{2}
+\contentsline {subsection}{\numberline {2.2}Lattice points below segment}{2}
+\contentsline {subsection}{\numberline {2.3}Adaptive Simpson's method}{2}
+\contentsline {section}{\numberline {3}Number theory}{3}
+\contentsline {subsection}{\numberline {3.1}Fast power module}{3}
+\contentsline {subsection}{\numberline {3.2}Euclidean algorithm}{3}
+\contentsline {subsection}{\numberline {3.3}Discrete Fourier transform}{3}
+\contentsline {subsection}{\numberline {3.4}Number theoretic transform}{3}
+\contentsline {subsection}{\numberline {3.5}Chinese remainder theorem}{3}
+\contentsline {subsection}{\numberline {3.6}Linear Recurrence}{3}
+\contentsline {subsection}{\numberline {3.7}Baby step giant step algorithm}{3}
+\contentsline {subsection}{\numberline {3.8}Miller Rabin primality test}{3}
+\contentsline {subsection}{\numberline {3.9}Pollard's Rho algorithm}{4}
+\contentsline {section}{\numberline {4}Geometry}{4}
+\contentsline {subsection}{\numberline {4.1}Point}{4}
+\contentsline {subsection}{\numberline {4.2}Line}{4}
+\contentsline {subsection}{\numberline {4.3}Circle}{4}
+\contentsline {subsection}{\numberline {4.4}Centers of a triangle}{5}
+\contentsline {subsection}{\numberline {4.5}Fermat point}{5}
+\contentsline {subsection}{\numberline {4.6}Convex hull}{5}
+\contentsline {subsection}{\numberline {4.7}Half plane intersection}{5}
+\contentsline {subsection}{\numberline {4.8}Minimum circle}{5}
+\contentsline {subsection}{\numberline {4.9}Intersection of a polygon and a circle}{5}
+\contentsline {subsection}{\numberline {4.10}Union of circles}{5}
+\contentsline {section}{\numberline {5}Graph}{6}
+\contentsline {subsection}{\numberline {5.1}Hopcoft-Karp algorithm}{6}
+\contentsline {subsection}{\numberline {5.2}Kuhn-Munkres algorithm}{6}
+\contentsline {subsection}{\numberline {5.3}Maximum flow}{6}
+\contentsline {subsection}{\numberline {5.4}Minimum cost flow}{6}

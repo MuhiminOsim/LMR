@@ -13,21 +13,26 @@
 \lhead{Luna's Magic Reference}
 \setlength{\columnsep}{16pt}
 
-\titleformat{\section}
-{\huge}	
-{\thesection.}
-{4pt}		
-{}		
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{0pt}{0pt}
 
+\definecolor{commentcolor}{rgb}{0,.5,0}
+\definecolor{keywordcolor}{rgb}{0,0,.5}
+\definecolor{numbercolor}{rgb}{.2,0,0}
+
 \lstset{
-	basicstyle=\footnotesize\ttfamily,
+	basicstyle=\footnotesize\bfseries\ttfamily,
 	breaklines=true,
 	frame=single,
 	language=c++,
+	mathescape=true,
 	tabsize=1,
+	numbers=left,
+	numbersep=4pt,
+	numberstyle=\color{numbercolor},
+	commentstyle=\color{commentcolor},
+	keywordstyle=\color{keywordcolor},
 }
 
 \title{\LARGE{Luna's Magic Reference}}
@@ -46,14 +51,70 @@
 		\begin{spacing}{0.6}
 		\section{Data Structure}
 			\subsection{KD tree}
-				\lstinputlisting{src/kd_tree.cpp}
+				\lstinputlisting{src/data_structure/kd_tree.cpp}
 			\subsection{Splay}
-				\lstinputlisting{src/splay_operations.cpp}
+				\lstinputlisting{src/data_structure/splay_operations.cpp}
 			\subsection{Link-cut tree}
-				\lstinputlisting{src/lct_access.cpp}
+				\lstinputlisting{src/data_structure/lct_access.cpp}
+		\section{Formula}
+			\subsection{Zeller’s congruence}
+				\lstinputlisting{src/formula/zeller.cpp}
+			\subsection{Lattice points below segment}
+				\lstinputlisting{src/formula/lattice.cpp}
+			\subsection{Adaptive Simpson's method}
+				\lstinputlisting{src/formula/simpson.cpp}
+		\section{Number theory}
+			\subsection{Fast power module}
+				\lstinputlisting{src/number_theory/fpm.cpp}
+			\subsection{Euclidean algorithm}
+				\lstinputlisting{src/number_theory/exgcd.cpp}
+			\subsection{Discrete Fourier transform}
+				\lstinputlisting{src/number_theory/dft.cpp}
+			\subsection{Number theoretic transform}
+				\lstinputlisting{src/number_theory/ntt.cpp}
+			\subsection{Chinese remainder theorem}
+				\lstinputlisting{src/number_theory/crt.cpp}
+			\subsection{Linear Recurrence}
+				\lstinputlisting{src/number_theory/linear_rec.cpp}
+			\subsection{Baby step giant step algorithm}
+				\lstinputlisting{src/number_theory/bsgs.cpp}
+			\subsection{Miller Rabin primality test}
+				\lstinputlisting{src/number_theory/miller_rabin.cpp}
+			\subsection{Pollard's Rho algorithm}
+				\lstinputlisting{src/number_theory/pollard_rho.cpp}
+		\section{Geometry}
+				\lstinputlisting{src/geometry/geometry.cpp}
+			\subsection{Point}
+				\lstinputlisting{src/geometry/point.cpp}
+			\subsection{Line}
+				\lstinputlisting{src/geometry/line.cpp}
+			\subsection{Circle}
+				\lstinputlisting{src/geometry/circle.cpp}
+			\subsection{Centers of a triangle}
+				\lstinputlisting{src/geometry/center.cpp}
+			\subsection{Fermat point}
+				\lstinputlisting{src/geometry/fermat.cpp}
+			\subsection{Convex hull}
+				\lstinputlisting{src/geometry/convex_hull.cpp}
+			\subsection{Half plane intersection}
+				\lstinputlisting{src/geometry/half_plane_intersection.cpp}
+			\subsection{Minimum circle}
+				\lstinputlisting{src/geometry/minimum_circle.cpp}
+			\subsection{Intersection of a polygon and a circle}
+				\lstinputlisting{src/geometry/polygon_circle_intersect.cpp}
+			\subsection{Union of circles}
+				\lstinputlisting{src/geometry/circle_union.cpp}
+		\section{Graph}
+			\subsection{Hopcoft-Karp algorithm}
+				\lstinputlisting{src/graph/hopcoft_karp.cpp}
+			\subsection{Kuhn-Munkres algorithm}
+				\lstinputlisting{src/graph/kuhn_munkres.cpp}
+			\subsection{Maximum flow}
+				\lstinputlisting{src/graph/maximum_flow.cpp}
+			\subsection{Minimum cost flow}
+				\lstinputlisting{src/graph/minimum_cost_flow.cpp}
 		\end{spacing}
 		\endgroup
 	\end{multicols}
-	
 \end{document}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.2)  13 JUL 2018 05:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.2)  14 JUL 2018 02:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,25 +748,25 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    ... okay on input line 42.
 \c@lstlisting=\count167
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -841,54 +841,84 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  [1]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 49.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 54.
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./src/kd_tree.cpp
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <8> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 6.
 )
-(./src/splay_operations.cpp) (./src/lct_access.cpp) [2] (./main.aux) ) 
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 54.
+
+(./src/data_structure/kd_tree.cpp) (./src/data_structure/splay_operations.cpp)
+(./src/data_structure/lct_access.cpp)
+Missing character: There is no â in font cmbx12!
+Missing character: There is no € in font cmbx12!
+Missing character: There is no ™ in font cmbx12!
+ (./src/formula/zeller.cpp)
+(./src/formula/lattice.cpp) (./src/formula/simpson.cpp) [2]
+(./src/number_theory/fpm.cpp) (./src/number_theory/exgcd.cpp)
+(./src/number_theory/dft.cpp) (./src/number_theory/ntt.cpp)
+(./src/number_theory/crt.cpp) (./src/number_theory/linear_rec.cpp)
+(./src/number_theory/bsgs.cpp) (./src/number_theory/miller_rabin.cpp [3])
+(./src/number_theory/pollard_rho.cpp) (./src/geometry/geometry.cpp)
+(./src/geometry/point.cpp) (./src/geometry/line.cpp) (./src/geometry/circle.cpp
+[4]) (./src/geometry/center.cpp) (./src/geometry/fermat.cpp)
+(./src/geometry/convex_hull.cpp) (./src/geometry/half_plane_intersection.cpp)
+(./src/geometry/minimum_circle.cpp)
+(./src/geometry/polygon_circle_intersect.cpp) (./src/geometry/circle_union.cpp
+[5]) (./src/graph/hopcoft_karp.cpp) (./src/graph/kuhn_munkres.cpp
+Missing character: There is no â in font pcrb7t!
+Missing character: There is no € in font pcrb7t!
+Missing character: There is no “ in font pcrb7t!
+)
+(./src/graph/maximum_flow.cpp) (./src/graph/minimum_cost_flow.cpp [6]) [7]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 14855 strings out of 493014
- 257206 string characters out of 6137002
- 3170248 words of memory out of 5000000
- 18190 multiletter control sequences out of 15000+600000
- 13449 words of font info for 52 fonts, out of 8000000 for 9000
+ 15433 strings out of 493014
+ 264265 string characters out of 6137002
+ 1769605 words of memory out of 5000000
+ 18690 multiletter control sequences out of 15000+600000
+ 12327 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,58p,10454b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texli
-ve/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-c:/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2016/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2016/texmf-dist/fonts
-/type1/urw/courier/ucrro8a.pfb>
-Output written on main.pdf (3 pages, 101840 bytes).
+ 40i,12n,58p,10454b,1904s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
+Output written on main.pdf (8 pages, 214343 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

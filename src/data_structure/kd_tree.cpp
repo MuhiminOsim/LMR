@@ -1,8 +1,7 @@
-/*	kd_tree : finds the k-th closest point in O(k*n(1-1/k)).
+/*	kd_tree : finds the k-th closest point in $\color{commentcolor}O(kn^{1-\frac{1}{k}}$).
 Usage : Stores the data in p[]. Call function init (n, k). Call min_kth (d, k). (or max_kth) (k is 1-based)
 Note : Switch to the commented code for Manhattan distance.
 Status : SPOJ-FAILURE Accepted.*/
-
 template <int MAXN = 200000, int MAXK = 2>
 struct kd_tree {
 	int k, size;
@@ -12,12 +11,12 @@ struct kd_tree {
 		kd_node() {}
 		kd_node (const point &rhs) : l (-1), r (-1), p (rhs), dmin (rhs), dmax (rhs) {}
 		void merge (const kd_node &rhs, int k) {
-			for (register int i = 0; i < k; i++) {
+			for (register int i = 0; i < k; ++i) {
 				dmin.data[i] = std::min (dmin.data[i], rhs.dmin.data[i]);
 				dmax.data[i] = std::max (dmax.data[i], rhs.dmax.data[i]); } }
 		long long min_dist (const point &rhs, int k) const {
 			register long long ret = 0;
-			for (register int i = 0; i < k; i++) {
+			for (register int i = 0; i < k; ++i) {
 				if (dmin.data[i] <= rhs.data[i] && rhs.data[i] <= dmax.data[i]) continue;
 				ret += std::min (1ll * (dmin.data[i] - rhs.data[i]) * (dmin.data[i] - rhs.data[i]),
 								 1ll * (dmax.data[i] - rhs.data[i]) * (dmax.data[i] - rhs.data[i]));
@@ -25,7 +24,7 @@ struct kd_tree {
 			} return ret; }
 		long long max_dist (const point &rhs, int k) {
 			long long ret = 0;
-			for (int i = 0; i < k; i++) {
+			for (int i = 0; i < k; ++i) {
 				int tmp = std::max (std::abs (dmin.data[i] - rhs.data[i]), std::abs (dmax.data[i] - rhs.data[i]));
 				ret += 1ll * tmp * tmp; }
 //				ret += std::max (std::abs (rhs.data[i] - dmax.data[i]) + std::abs (rhs.data[i] - dmin.data[i])); }
@@ -37,8 +36,8 @@ struct kd_tree {
 		bool operator < (const result &rhs) const { return dist < rhs.dist || (dist == rhs.dist && d.id < rhs.d.id); } };
 	long long sqrdist (const point &a, const point &b) {
 		long long ret = 0;
-		for (int i = 0; i < k; i++) ret += 1ll * (a.data[i] - b.data[i]) * (a.data[i] - b.data[i]);
-//		for (int i = 0; i < k; i++) ret += std::abs (a.data[i] - b.data[i]);
+		for (int i = 0; i < k; ++i) ret += 1ll * (a.data[i] - b.data[i]) * (a.data[i] - b.data[i]);
+//		for (int i = 0; i < k; ++i) ret += std::abs (a.data[i] - b.data[i]);
 		return ret; }
 	int alloc() { tree[size].l = tree[size].r = -1; return size++; }
 	void build (const int &depth, int &rt, const int &l, const int &r) {
