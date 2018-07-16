@@ -1,0 +1,55 @@
+\subsubsection{Binomial Coefficients}
+\[ {n \choose k} = (-1)^k{k-n-1 \choose k},\ \ \sum_{k \leq n}{r+k \choose k} = {r+n+1 \choose n} \]
+\[ \sum_{k=0}^n{k \choose m} = {n+1 \choose m+1} \]
+\[ \sqrt{1+z} = 1 + \sum_{k=1}^{\infty}\frac{(-1)^{k-1}}{k\times2^{2k-1}}{2k-2 \choose k-1}z^k \]
+\[ \sum_{k=0}^{r}{r-k \choose m}{s+k \choose n} = {r+s+1 \choose m+n+1} \]
+\[ C_{n, m} = {n+m \choose m} - {n+m \choose m-1}, n \geq m \]
+\[ {n \choose k} \equiv [n\& k=k] \pmod 2 \]
+\[ {{n_1+\cdots+n_p}\choose m}=\sum_{k_1+\cdots+k_p=m}{n_1\choose k_1}\cdots{n_p\choose k_p}\]
+\subsubsection{Fibonacci Numbers}
+\[ F(z) = \frac{z}{1-z-z^2} \]
+\[ f_n = \frac{{\phi}^n-{\hat{\phi}}^n}{\sqrt{5}}, \phi = \frac{1+\sqrt{5}}{2},
+\hat{\phi} = \frac{1-\sqrt{5}}{2} \]
+\[ \sum_{k=1}^nf_k = f_{n+2}-1,\ \ \sum_{k=1}^nf^2_k = f_nf_{n+1} \]
+\[ \sum_{k=0}^nf_kf_{n-k} = \frac{1}{5}(n-1)f_n+\frac{2}{5}nf_{n-1} \]
+\[ \frac{f_{2n}}{f_n} = f_{n-1} + f_{n+1}\]
+\[ f_1+2f_2+3f_3+\cdots+nf_n=nf_{n+2}-f_{n+3}+2]\]
+\[ \gcd(f_m,f_n)=f_{\gcd(m,n)}\]
+\[ f^2_n + (-1)^n = f_{n+1}f_{n-1} \]
+\[ f_{n+k} = f_nf_{k+1} + f_{n-1}f_k \]
+\[ f_{2n+1} = f^2_n+f^2_{n+1} \]
+\[ (-1)^kf_{n-k} = f_{n}f_{k-1} - f_{n-1}f_{k} \]
+\[ \text{Modulo }f_n, f_{mn+r} \equiv \left\{
+\begin{aligned}
+&f_r,& m \bmod 4 = 0; \\
+&(-1)^{r+1}f_{n-r},& m \bmod 4 = 1; \\
+&(-1)^nf_r,& m \bmod 4 = 2; \\
+&(-1)^{r+1+n}f_{n-r},& m \bmod 4 = 3.
+\end{aligned}
+\right.
+\]
+\subsubsection{Lucas Numbers}
+\[ L_0=2,L_1=1,L_n=L_{n-1}+L_{n-2}=(\frac{1+\sqrt{5}}{2})^n+\frac{1-\sqrt{5}}{2})^n \]
+\[ L(x)=\frac{2-x}{1-x-x^2} \]
+\subsubsection{Catlan Numbers}
+\begin{align*}
+c_1=1,c_n=\sum_{i=0}^{n-1}c_ic_{n-1-i}=c_{n-1}\frac{4n-2}{n+1}=\frac{\binom{2n}{n}}{n+1}\\
+=\binom{2n}{n}-\binom{2n}{n-1}, c(x)=\frac{1-\sqrt{1-4x}}{2x}
+\end{align*}
+\subsubsection{Stirling Cycle Numbers}
+Divide $n$ elements into $k$ non-empty cycles.
+\[s(n,0)=0,s(n,n)=1,s(n+1,k)=s(n,k-1)-ns(n,k)\]
+\[s(n,k)=(-1)^{n-k}{n \brack k}\]
+\[{n+1 \brack k} = n{n \brack k} + {n \brack k-1},{n+1 \brack 2} = n!H_n\]
+ \begin{align*}
+x^{\underline{n}} = x(x-1)...(x-n+1) &= \sum_k{ {n \brack k}(-1)^{n-k}x^k }\\
+x^{\overline{n}} = x(x+1)...(x+n-1) &= \sum_k{ {n \brack k}x^k }\\
+ \end{align*}
+\subsubsection{Stirling Subset Numbers}
+Divide $n$ elements into $k$ non-empty subsets.
+\[ {n+1 \brace k} = k{n \brace k} + {n \brace k-1} \]
+\[ x^n = \sum_k{ {n \brace k}x^{\underline{k}} } = \sum_k{ {n \brace k}(-1)^{n-k}x^{\overline{k}} } \]
+\[ m!{n \brace m} = \sum_k{m \choose k}k^n(-1)^{m-k} \]
+For a fixed $k$, generating functions :
+\[\sum_{n=0}^{\infty}{n \brace k}x^{n-k}=\prod_{r=1}^{k}\frac{1}{1-rx}\]
+

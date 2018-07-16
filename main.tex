@@ -7,6 +7,7 @@
 \usepackage{nameref}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage{mathtools}
 
 \pagestyle{fancy}
 \setlength{\headsep}{0.1cm}
@@ -36,6 +37,9 @@
 	keywordstyle=\color{keywordcolor},
 }
 
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
 \title{Luna's Magic Reference} 
 \author{Suzune Nisiyama}
 \date{\today\\ \vspace{100pt} \noindent\rule{\textwidth}{1pt}\\ \vspace{100pt} \normalsize\begin{raggedright}\input{LICENSE}\end{raggedright}}
@@ -53,8 +57,6 @@
 		\section{Environment}
 			\subsection{Vimrc}
 				\lstinputlisting[language=]{src/environment/vimrc}
-			\subsection{Java}
-				\lstinputlisting[language=java]{src/environment/Main.java}
 		\section{Data Structure}
 			\subsection{KD tree}
 				\lstinputlisting{src/data_structure/kd_tree.cpp}
@@ -141,12 +143,26 @@
 			\subsection{Regular expression}
 				\lstinputlisting[mathescape=false]{src/string/regex.cpp}
 		\section{Tips}
+			\subsection{Java}
+				\lstinputlisting[language=java]{src/tips/Main.java}
+			\subsection{Random numbers}
+				\lstinputlisting{src/tips/random.cpp}
+			\subsection{Read hack}
+				\lstinputlisting{src/tips/read_hack.cpp}
+			\subsection{Stack hack}
+				\lstinputlisting{src/tips/stack_hack.cpp}
+			\subsection{Time hack}
+				\lstinputlisting{src/tips/time_hack.cpp}
 			\subsection{Builtin functions}
 				\input{tex/builtin.tex}
 			\subsection{Prufer sequence}
 				\input{tex/prufer_sequence.tex}
 			\subsection{Spanning tree counting}
 				\input{tex/spanning_tree_counting.tex}
+			\subsection{Mobius inversion}
+				\input{tex/mobius.tex}
+			\subsection{Numbers}
+				\input{tex/numbers.tex}
 		\section{Appendix}
 			\subsection{Calculus table}
 				\input{tex/derivative.tex}
