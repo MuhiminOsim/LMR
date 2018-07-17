@@ -1,5 +1,5 @@
 \documentclass[titlepage, a4paper,10pt]{article}
-\usepackage{listings, courier, color, setspace, titlesec, fancyhdr, dingbat, mdframed, multicol}
+\usepackage{listings, courier, color, xcolor, setspace, titlesec, fancyhdr, dingbat, mdframed, multicol}
 \usepackage{graphicx, amssymb, amsmath, textcomp, booktabs}
 \usepackage[left=1.5cm, right=0.4cm, top=1.7cm, bottom=0.0cm]{geometry}
 \usepackage{pdfpages}
@@ -19,9 +19,10 @@
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{0pt}{0pt}
 
+\definecolor{numbercolor}{rgb}{.3,0,0}
+\definecolor{identifiercolor}{rgb}{.3,0,.3}
 \definecolor{commentcolor}{rgb}{0,.5,0}
 \definecolor{keywordcolor}{rgb}{0,0,.5}
-\definecolor{numbercolor}{rgb}{.2,0,0}
 
 \lstset{
 	basicstyle=\footnotesize\bfseries\ttfamily,
@@ -33,6 +34,7 @@
 	numbers=left,
 	numbersep=3.5pt,
 	numberstyle=\tiny\bfseries\ttfamily\color{numbercolor},
+	identifierstyle=\color{identifiercolor},
 	commentstyle=\color{commentcolor},
 	keywordstyle=\color{keywordcolor},
 }
@@ -147,6 +149,8 @@
 				\lstinputlisting{src/graph/maximum_clique.cpp}
 			\subsection{Dominator tree}
 				\lstinputlisting{src/graph/dominator_tree.cpp}
+			\subsection{Tarjan}
+				\lstinputlisting{src/graph/tarjan.cpp}
 		\section{String}
 			\subsection{Suffix Array}
 				\lstinputlisting{src/string/suffix_array.cpp}

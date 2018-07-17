@@ -3,7 +3,7 @@ template <int MAXN = 100000, int MAXM = 100000>
 struct hopcoft_karp {
 	using edge_list = std::vector <int> [MAXN];
 	int mx[MAXN], my[MAXM], lv[MAXN];
-	bool dfs (edge_list <MAXN, MAXM> &e, int x) {
+	bool dfs (edge_list &e, int x) {
 		for (int y : e[x]) {
 			int w = my[y];
 			if (!~w || (lv[x] + 1 == lv[w] && dfs (e, w))) {
