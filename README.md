@@ -14,5 +14,3 @@ Add & Test the merge-split treap.
 
 Add FFT for integers & polynomial division.
 
-Add BBA.
-

@@ -6,7 +6,7 @@ struct crt {
 		for (int i = 0; i < (int) in.size (); ++i) {
 			long long n, u;
 			euclid (out.second, in[i].second, n, u);
-			long long divisor = gcd (out.second, in[i].second);
+			long long divisor = std::__gcd (out.second, in[i].second);
 			if ((in[i].first - out.first) % divisor) return false;
 			n *= (in[i].first - out.first) / divisor;
 			n = fix (n, in[i].second);
