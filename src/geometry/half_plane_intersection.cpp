@@ -23,7 +23,7 @@ std::vector <point> half_plane_intersect (std::vector <line> h) {
 	for (int i = 0; i < (int) h.size (); ++i) {
 		while (fore < rear && !turn_left (h[i], line_intersect (ret[rear - 1], ret[rear]))) --rear;
 		while (fore < rear && !turn_left (h[i], line_intersect (ret[fore], ret[fore + 1]))) ++fore;
-		ret.push_back[++rear] = h[i]; }
+		ret[++rear] = h[i]; }
 	while (rear - fore > 1 && !turn_left (ret[fore], line_intersect (ret[rear - 1], ret[rear]))) --rear;
 	while (rear - fore > 1 && !turn_left (ret[rear], line_intersect (ret[fore], ret[fore + 1]))) ++fore;
 	if (rear - fore < 2) return std::vector <point> ();
