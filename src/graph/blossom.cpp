@@ -1,7 +1,6 @@
 /*	Blossom algorithm : maximum match for general graph. */
 template <int MAXN = 500, int MAXM = 250000> 
 struct blossom {
-	using edge_list = std::vector <int> [MAXN];
 	int match[MAXN], d[MAXN], fa[MAXN], c1[MAXN], c2[MAXN], v[MAXN], q[MAXN];
 	int *qhead, *qtail;
 	struct {
@@ -30,11 +29,11 @@ struct blossom {
 		for (int i = ufs.find (x); i != b; i = ufs.find (fa[i])) {
 			ufs.merge (i, b);
 			if (d[i] == 1) { c1[i] = x; c2[i] = y; *qtail++ = i; } } }
-	bool bfs (int root, int n, const edge_list &e) {
+	bool bfs (int root, int n, const edge_list <MAXN, MAXM> &e) {
 		ufs.init (n); std::fill (d, d + MAXN, -1); std::fill (v, v + MAXN, -1);
 		qhead = qtail = q; d[root] = 0; *qtail++ = root;
 		while (qhead < qtail) {
-			for (int loc = *qhead++, i = 0; i < e[loc].size (); ++i) {
+			for (int loc = *qhead++, i = e.begin[loc]; ~i; i = e.next[i]) {
 				int dest = e.dest[i];
 				if (match[dest] == -2 || ufs.find (loc) == ufs.find (dest)) continue;
 				if (d[dest] == -1)
@@ -49,7 +48,7 @@ struct blossom {
 						int b = lca (loc, dest, root);
 						contract (loc, dest, b); contract (dest, loc, b); } } }
 		return 0; }
-	int solve (int n, const edge_list &e) {
+	int solve (int n, const edge_list <MAXN, MAXM> &e) {
 		std::fill (fa, fa + n, 0); std::fill (c1, c1 + n, 0);
 		std::fill (c2, c2 + n, 0); std::fill (match, match + n, -1);
 		int re = 0; for (int i = 0; i < n; i++) 
