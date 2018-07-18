@@ -13,5 +13,5 @@ for (std::sregex_iterator i = mbegin; i != mend; ++i) {
 	match.prefix () and match.suffix () give the prefix and the suffix.
 	match.length () gives length and match.position () gives position of the match. */ }
 std::regex_replace (str, pattern, "sh$1");
-//$n is the backreference, $& is the entire match, $` is the prefix, $' is the suffix, $$is the $ sign.
+//$n is the backreference, $& is the entire match, $` is the prefix, $' is the suffix, $$ is the $ sign.
 
