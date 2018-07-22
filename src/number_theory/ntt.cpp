@@ -3,7 +3,7 @@ Usage : Perform NTT on 3 modules and call crt () to merge the result. */
 template <int MAXN = 1000000>
 struct ntt {
 	int MOD[3] = {1045430273, 1051721729, 1053818881}, PRT[3] = {3, 6, 7};
-	void solve (int *a, int n, int f, int mod, int prt) {
+	void solve (int *a, int n, int f = 0, int mod = 998244353, int prt = 3) {
 		for (int i = 0, j = 0; i < n; ++i) {
 			if (i > j) std::swap (a[i], a[j]);
 			for (int t = n >> 1; (j ^= t) < t; t >>= 1); }
