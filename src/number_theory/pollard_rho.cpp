@@ -1,4 +1,4 @@
-/*	Pollard Rho : factorizes an integer. */
+/*	Pollard's Rho : factorizes an integer. */
 struct pollard_rho {
 	miller_rabin is_prime;
 	const long long thr = 13E9;
