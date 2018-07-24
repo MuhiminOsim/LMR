@@ -50,6 +50,7 @@ Divide $n$ elements into $k$ non-empty subsets.
 \[ {n+1 \brace k} = k{n \brace k} + {n \brace k-1} \]
 \[ x^n = \sum_k{ {n \brace k}x^{\underline{k}} } = \sum_k{ {n \brace k}(-1)^{n-k}x^{\overline{k}} } \]
 \[ m!{n \brace m} = \sum_k{m \choose k}k^n(-1)^{m-k} \]
+\[ \sum_{k=1}^nk^p = \sum_{k=0}^p{p \brace k}(n+1)^{\underline{k}} \]
 For a fixed $k$, generating functions :
 \[\sum_{n=0}^{\infty}{n \brace k}x^{n-k}=\prod_{r=1}^{k}\frac{1}{1-rx}\]
 \subsubsection{Motzkin Numbers}
