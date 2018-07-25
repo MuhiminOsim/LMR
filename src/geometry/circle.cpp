@@ -10,7 +10,7 @@ circle make_circle (cp a, cp b, cp c) { point p = circumcenter (a, b, c); return
 //In the order of the line vector.
 std::vector <point> line_circle_intersect (cl a, cc b) {
 	if (cmp (point_to_line (b.c, a), b.r) > 0) return std::vector <point> ();
-	double x = sqrt (sqr (b.r) - sqr (point_to_line (b.c, a)));
+	double x = msqrt (sqr (b.r) - sqr (point_to_line (b.c, a)));
 	point s = project_to_line (b.c, a), u = (a.t - a.s).unit ();
 	if (sgn (x) == 0) return std::vector <point> ({s});
 	return std::vector <point> ({s - u * x, s + u * x}); }
@@ -25,7 +25,7 @@ double circle_intersect_area (cc a, cc b) {
 std::vector <point> circle_intersect (cc a, cc b) {
 	if (a.c == b.c || cmp (dis (a.c, b.c), a.r + b.r) > 0 || cmp (dis (a.c, b.c), std::abs (a.r - b.r)) < 0) return std::vector <point> ();
 	point r = (b.c - a.c).unit (); double d = dis (a.c, b.c);
-	double x = ((sqr (a.r) - sqr (b.r)) / d + d) / 2, h = sqrt (sqr (a.r) - sqr (x));
+	double x = ((sqr (a.r) - sqr (b.r)) / d + d) / 2, h = msqrt (sqr (a.r) - sqr (x));
 	if (sgn (h) == 0) return std::vector <point> ({a.c + r * x});
 	return std::vector <point> ({a.c + r * x - r.rot90 () * h, a.c + r * x + r.rot90 () * h}); }
 //Counter-clockwise with respect of point $\color{commentcolor}a$.

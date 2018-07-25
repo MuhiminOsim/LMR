@@ -14,7 +14,7 @@ point line_intersect (cl a, cl b) {
 double point_to_line (cp a, cl b) { return fabs (det (b.t - b.s, a - b.s)) / dis (b.s, b.t); }
 point project_to_line (cp a, cl b) { return b.s + (b.t - b.s) * (dot (a - b.s, b.t - b.s) / dis2 (b.t, b.s)); }
 double point_to_segment (cp a, cl b) {
-	if (sgn (dot (b.s - a, b.t - b.s) * dot (b.t - a, b.t - b.s)) <= 0) return fabs (det (b.t - b.s, a - b.s)) / dis (b.s, b.t);
+	if (sgn (dot (b.s - a, b.t - b.s) * dot (b.t - a, b.t - b.s)) <= 0) return std::abs (det (b.t - b.s, a - b.s)) / dis (b.s, b.t);
 	return std::min (dis (a, b.s), dis (a, b.t)); }
 bool in_polygon (cp p, const std::vector <point> & po) {
 	int n = (int) po.size (), counter = 0;

@@ -3,7 +3,7 @@ struct point {
 	double x, y;
 	explicit point (cd x = 0, cd y = 0) : x (x), y (y) {}
 	int dim () const { return sgn (y) == 0 ? sgn (x) < 0 : sgn (y) < 0; }
-	point unit () const { double l = sqrt (x * x + y * y); return point (x / l, y / l); }
+	point unit () const { double l = msqrt (x * x + y * y); return point (x / l, y / l); }
 	//counter-clockwise
 	point rot90 () const { return point (-y, x); }
 	//clockwise
@@ -22,5 +22,5 @@ point operator / (cp a, cd b) { return point (a.x / b, a.y / b); }
 double dot (cp a, cp b) { return a.x * b.x + a.y * b.y; }
 double det (cp a, cp b) { return a.x * b.y - a.y * b.x; }
 double dis2 (cp a, cp b = point ()) { return sqr (a.x - b.x) + sqr (a.y - b.y); }
-double dis (cp a, cp b = point ()) { return sqrt (dis2 (a, b)); }
+double dis (cp a, cp b = point ()) { return msqrt (dis2 (a, b)); }
 
