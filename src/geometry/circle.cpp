@@ -11,7 +11,9 @@ circle make_circle (cp a, cp b, cp c) { point p = circumcenter (a, b, c); return
 std::vector <point> line_circle_intersect (cl a, cc b) {
 	if (cmp (point_to_line (b.c, a), b.r) > 0) return std::vector <point> ();
 	double x = sqrt (sqr (b.r) - sqr (point_to_line (b.c, a)));
-	return std::vector <point> ({project_to_line (b.c, a) + (a.s - a.t).unit () * x, project_to_line (b.c, a) - (a.s - a.t).unit () * x}); }
+	point s = project_to_line (b.c, a), u = (a.t - a.s).unit ();
+	if (sgn (x) == 0) return std::vector <point> ({s});
+	return std::vector <point> ({s - u * x, s + u * x}); }
 double circle_intersect_area (cc a, cc b) {
 	double d = dis (a.c, b.c);
 	if (sgn (d - (a.r + b.r)) >= 0) return 0;
@@ -22,10 +24,8 @@ double circle_intersect_area (cc a, cc b) {
 //Counter-clockwise with respect of vector $\color{commentcolor}O_aO_b$.
 std::vector <point> circle_intersect (cc a, cc b) {
 	if (a.c == b.c || cmp (dis (a.c, b.c), a.r + b.r) > 0 || cmp (dis (a.c, b.c), std::abs (a.r - b.r)) < 0) return std::vector <point> ();
-	point r = (b.c - a.c).unit ();
-	double d = dis (a.c, b.c);
-	double x = ((sqr (a.r) - sqr (b.r)) / d + d) / 2;
-	double h = sqrt (sqr (a.r) - sqr (x));
+	point r = (b.c - a.c).unit (); double d = dis (a.c, b.c);
+	double x = ((sqr (a.r) - sqr (b.r)) / d + d) / 2, h = sqrt (sqr (a.r) - sqr (x));
 	if (sgn (h) == 0) return std::vector <point> ({a.c + r * x});
 	return std::vector <point> ({a.c + r * x - r.rot90 () * h, a.c + r * x + r.rot90 () * h}); }
 //Counter-clockwise with respect of point $\color{commentcolor}a$.
@@ -40,7 +40,7 @@ std::vector <line> extangent (cc a, cc b) {
 		ret.push_back (line (a.c + dir, b.c + dir));
 	} else {
 		point p = (b.c * a.r - a.c * b.r) / (a.r - b.r); 
-		std::vector pp = tangent (p, a), qq = tangent (p, b);
+		std::vector <point> pp = tangent (p, a), qq = tangent (p, b);
 		if (pp.size () == 2 && qq.size () == 2) {
 			if (cmp (a.r, b.r) < 0) std::swap (pp[0], pp[1]), std::swap (qq[0], qq[1]);
 			ret.push_back (line (pp[0], qq[0]));
@@ -48,8 +48,9 @@ std::vector <line> extangent (cc a, cc b) {
 	return ret; }
 //Counter-clockwise with respect of point $\color{commentcolor}O_a$.
 std::vector <line> intangent (cc c1, cc c2) {
+	std::vector <line> ret;
 	point p = (b.c * a.r + a.c * b.r) / (a.r + b.r); 
-	std::vector pp = tangent (p, a), qq = tangent (p, b);
+	std::vector <point> pp = tangent (p, a), qq = tangent (p, b);
 	if (pp.size () == 2 && qq.size () == 2) {
 		ret.push_back (line (pp[0], qq[0]));
 		ret.push_back (line (pp[1], qq[1])); }

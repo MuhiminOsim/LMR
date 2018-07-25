@@ -42,14 +42,14 @@ Divide $n$ elements into $k$ non-empty cycles.
 \[s(n,k)=(-1)^{n-k}{n \brack k}\]
 \[{n+1 \brack k} = n{n \brack k} + {n \brack k-1},{n+1 \brack 2} = n!H_n\]
  \begin{align*}
-x^{\underline{n}} = x(x-1)...(x-n+1) &= \sum_k{ {n \brack k}(-1)^{n-k}x^k }\\
-x^{\overline{n}} = x(x+1)...(x+n-1) &= \sum_k{ {n \brack k}x^k }\\
+x^{\underline{n}} = x(x-1)...(x-n+1) &= \sum_{k=0}^n{ {n \brack k}(-1)^{n-k}x^k }\\
+x^{\overline{n}} = x(x+1)...(x+n-1) &= \sum_{k=0}^n{ {n \brack k}x^k }\\
  \end{align*}
 \subsubsection{Stirling Subset Numbers}
 Divide $n$ elements into $k$ non-empty subsets.
 \[ {n+1 \brace k} = k{n \brace k} + {n \brace k-1} \]
-\[ x^n = \sum_k{ {n \brace k}x^{\underline{k}} } = \sum_k{ {n \brace k}(-1)^{n-k}x^{\overline{k}} } \]
-\[ m!{n \brace m} = \sum_k{m \choose k}k^n(-1)^{m-k} \]
+\[ x^n = \sum_{k=0}^n{ {n \brace k}x^{\underline{k}} } = \sum_{k=0}^n{ {n \brace k}(-1)^{n-k}x^{\overline{k}} } \]
+\[ m!{n \brace m} = \sum_{k=0}^m{m \choose k}k^n(-1)^{m-k} \]
 \[ \sum_{k=1}^nk^p = \sum_{k=0}^p{p \brace k}(n+1)^{\underline{k}} \]
 For a fixed $k$, generating functions :
 \[\sum_{n=0}^{\infty}{n \brace k}x^{n-k}=\prod_{r=1}^{k}\frac{1}{1-rx}\]

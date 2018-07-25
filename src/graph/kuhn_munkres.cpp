@@ -1,5 +1,5 @@
-/*	Kuhn–Munkres algorithm : weighted maximum ming algorithm for bipartition graphs with complexity $\color{commentcolor}O(N^3)$.
-Note : The graph is 1-based. */
+/*	Kuhn Munkres algorithm : weighted maximum matching on bipartition graphs.
+Note : the graph is 1-based. */
 template <int MAXN = 500>
 struct kuhn_munkres {
 	int n, w[MAXN][MAXN], lx[MAXN], ly[MAXN], m[MAXN], way[MAXN], sl[MAXN];
