@@ -1,7 +1,6 @@
 /*	Dominator tree : finds the immediate dominator (idom[]) of each node, idom[x] will be x if x does not have a dominator, and will be -1 if x is not reachable from s. */
 template <int MAXN = 100000, int MAXM = 100000>
 struct dominator_tree {
-	using edge_list = std::vector <int> [MAXN];
 	int dfn[MAXN], sdom[MAXN], idom[MAXN], id[MAXN], f[MAXN], fa[MAXN], smin[MAXN], stamp;
 	void predfs (int x, const edge_list <MAXN, MAXM> &succ) {
 		id[dfn[x] = stamp++] = x;

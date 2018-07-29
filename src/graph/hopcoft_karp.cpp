@@ -1,7 +1,6 @@
 /*	Hopcoft-Karp algorithm : unweighted maximum matching for bipartition graphs with complexity $\color{commentcolor}O(m\sqrt{n})$. */
 template <int MAXN = 100000, int MAXM = 100000>
 struct hopcoft_karp {
-	using edge_list = std::vector <int> [MAXN];
 	int mx[MAXN], my[MAXM], lv[MAXN];
 	bool dfs (edge_list <MAXN, MAXM> &e, int x) {
 		for (int i = e.begin[x]; ~i; i = e.next[i]) {
