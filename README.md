@@ -5,12 +5,8 @@ Luna's Magic Reference
 Intended to be a detailed reference for the ACM/ICPC contests.
 
 ## Progress
-Porting from other sources...
+Fixing...
 
 ## TODO
-Rework the splay and LCT.
-
 Add & Test the merge-split treap.
-
-Add FFT for integers & polynomial division.
 
