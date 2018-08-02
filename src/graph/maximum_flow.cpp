@@ -8,10 +8,19 @@ struct isap {
 		void add_edge (int u, int v, int f) {
 			dest[size] = v; next[size] = begin[u]; flow[size] = f; begin[u] = size++;
 			dest[size] = u; next[size] = begin[v]; flow[size] = 0; begin[v] = size++; } };
-	int pre[MAXN], d[MAXN], gap[MAXN], cur[MAXN];
+	int pre[MAXN], d[MAXN], gap[MAXN], cur[MAXN], que[MAXN], vis[MAXN];
 	int solve (flow_edge_list &e, int n, int s, int t) {
-		for (int i = 0; i < n; ++i) { pre[i] = d[i] = gap[i] = 0; cur[i] = e.begin[i]; }
-		gap[0] = n; int u = pre[s] = s, v, maxflow = 0;
+		for (int i = 0; i < n; ++i) { pre[i] = d[i] = gap[i] = vis[i] = 0; cur[i] = e.begin[i]; }
+		int l = 0, r = 0; que[0] = t; gap[0] = 1; vis[t] = true;
+		while (l <= r) { int u = que[l++];
+			for (int i = e.begin[u]; ~i; i = e.next[i])
+				if (e.flow[i] == 0 && !vis[e.dest[i]]) {
+					que[++r] = e.dest[i];
+					vis[e.dest[i]] = true;
+					d[e.dest[i]] = d[u] + 1;
+					++gap[d[e.dest[i]]]; } }
+		for (int i = 0; i < n; ++i) if (!vis[i]) d[i] = n, ++gap[n];
+		int u = pre[s] = s, v, maxflow = 0;
 		while (d[s] < n) {
 			v = n; for (int i = cur[u]; ~i; i = e.next[i])
 				if (e.flow[i] && d[u] == d[e.dest[i]] + 1) {
