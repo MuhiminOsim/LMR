@@ -1,3 +1,6 @@
+//Faster cin/cout.
+std::ios::sync_with_stdio (0);
+std::cin.tie (0); std::cout.tie (0);
 //getline : gets a line.
 std::string str;
 std::getline (std::cin, str, '#');
