@@ -9,17 +9,13 @@ struct ees {
 		long long res = 1;
 		for (int i = 0; i < n; ++i) res *= x;
 		return res; }
-//	computes sum of powers.
 	long long pre_pow (long long x, int n) {
 		if (n == 0) return x;
 		if (n == 1) return (1 + x) * x / 2;
 		if (n == 2) return (1 + 2 * x) * (1 + x) * x / 6;
 		return 0; }
-//	returns f(p) when p is prime.
 	long long pfunc (long long p) { return -1; }
-//	returns f(k * p) when a prime p divides k.
 	long long cfunc (long long k, long long p) { return 0; }
-//	computes funca[i] (funcb[i]) with powa[d][i] (powb[d][i]).
 	void assemble () {
 		for (int i = 1; i <= sn; ++i) {
 			funca[i] = -powa[0][i];

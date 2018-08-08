@@ -16,7 +16,7 @@ struct ees {
 		return 0; }
 //	returns f(p) when p is prime.
 	long long pfunc (long long p) { return -1; }
-//	returns f(k * p) when a prime p divides k.
+//	returns f(x * p) with f(x) = k when a prime p divides x.
 	long long cfunc (long long k, long long p) { return 0; }
 //	computes funca[i] (funcb[i]) with powa[d][i] (powb[d][i]).
 	void assemble () {
