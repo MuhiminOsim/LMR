@@ -46,7 +46,7 @@ struct ees {
 	void dfs (int x, int f, long long mul, long long val, long long n, long long &res) {
 		for (; x < psize && mul * prime[x] * prime[x] <= n; ++x) {
 			long long nmul = mul * prime[x], nval = val * pfunc (prime[x]);
-			for (; nmul <= n; nmul *= prime[x], nval = cfunc (val, prime[x]))
+			for (; nmul <= n; nmul *= prime[x], nval = cfunc (nval, prime[x]))
 				dfs (x + 1, prime[x], nmul, nval, n, res); }
 		if (n / mul > f) res += val * ((n / mul <= sn ? funca[n / mul] : funcb[mul]) - funca[f]);
 		if (f > 1 && mul % (f * f) == 0) res += val; }
