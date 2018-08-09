@@ -39,6 +39,8 @@
 	keywordstyle=\color{keywordcolor},
 }
 
+\setlist{nolistsep}
+
 \def \bangle{ \atopwithdelims \langle \rangle}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
@@ -56,7 +58,7 @@
 		\let\clearpage\relax
 		\tableofcontents
 		\newpage
-		\begin{spacing}{0.6}
+		\begin{spacing}{0.8}
 		{\footnotesize
 		\section{Environment}
 			\subsection{Vimrc}
@@ -134,6 +136,8 @@
 				\lstinputlisting{src/geometry/polygon_circle_intersect.cpp}
 			\subsection{Union of circles}
 				\lstinputlisting{src/geometry/circle_union.cpp}
+			\subsection{Delaunay triangulation}
+				\lstinputlisting{src/geometry/delaunay.cpp}
 			\subsection{3D point}
 				\lstinputlisting{src/geometry/point3.cpp}
 			\subsection{3D line}
@@ -208,8 +212,14 @@
 				\input{tex/numbers.tex}
 			\subsection{Game theory}
 				\input{tex/games.tex}
+			\subsection{Lyndon word}
+				\input{tex/lyndon.tex}
+			\subsection{Delaunay triangulation}
+				\input{tex/delaunay.tex}
+			\subsection{Euler characteristic}
+				\input{tex/euler_char.tex}
 		\section{Appendix}
-			\subsection{Calculus table}
+			\subsection{Table of derivatives \& integrals}
 				\input{tex/derivative.tex}
 				\input{tex/integration.tex}
 			\subsection{Regular expression}
