@@ -1,8 +1,10 @@
 #define __ __attribute__ ((optimize ("-O3"))) 
 #define _ __ __inline __attribute__ ((__gnu_inline__, __always_inline__, __artificial__)) 
-_ int next_int () {
-	const int SIZE = 110000; static char buf[SIZE + 1]; static int p = SIZE;
-	register int ans = 0, f = 1, sgn = 1;
-	while ((p < SIZE || (p = 0, buf[fread (buf, 1, SIZE, stdin)] = 0, buf[0])) && (isdigit (buf[p]) && (ans = ans * 10 + buf[p] - '0', f = 0, 1) || f && (buf[p] == '-' && (sgn = 0), 1))) ++p;
-	return sgn ? ans : -ans; }
+
+bool read_int (int &x) {
+	const int SIZE = 110000; static char buf[SIZE + 1]; static char *p = buf + SIZE;
+	register int f = 0, sgn = 0; x = 0;
+	while ((*p || (p = buf, buf[fread (buf, 1, SIZE, stdin)] = 0, buf[0])) && (isdigit (*p) && (x = x * 10 + *p - '0', f = 1) || !f && (*p == '-' && (sgn = 1)))) ++p;
+	if (sgn) x = -x;
+	return buf[0]; }
 
