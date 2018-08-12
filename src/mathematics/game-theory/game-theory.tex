@@ -1,0 +1,27 @@
+\paragraph{Ferguson game}
+There are two boxes with $m$ stones and $n$ stones. Each player can empty any one box and move any positive number of stones from another box to this box each step. The player who cannot do so loses. 
+
+Solution: The first player loses if and only if both $m$ and $n$ are odd.
+
+\paragraph{Anti-Nim game}
+Nim game where the player who takes the last stone loses.
+
+Solution: The first player wins when:
+\begin{enumerate}
+\item Each pile contains only one stone, and there are even number of piles, or:
+\item There exists at least one pile with more than one stone, and the nim-value of the game is not zero.
+\end{enumerate}
+
+\paragraph{Fibonacci game}
+Two players take turns to collect stones from one pile with $n$ stones. The first player may take any positive number of stones during the first move, but not all of them. After that, each player may take any positive number of stones, but less than twice the number of stones taken during the last turn. The player who takes the last stone wins.
+
+Solution: The first player wins if and only if $n$ is not a fibonacci number.
+
+\paragraph{Wythoff's game}
+The game is played with two piles of counters. Players take turns removing counters from one or both piles; when removing counters from both piles, the numbers of counters removed from each pile must be equal. The game ends when one person removes the last counter or counters, thus winning.
+
+Solution: The second player wins if and only if $\lfloor \frac{\sqrt{5}+1}{2}|A-B| \rfloor=\min(A,B)$
+
+\subsubsection{Joseph cycle}
+$n$ players are numbered with $0,1,2,...,n-1$. $f_{1,m}=0,f_{n,m}=(f_{n-1,m}+m)\mod n$. 
+

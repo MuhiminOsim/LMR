@@ -5,7 +5,7 @@ Luna's Magic Reference
 Intended to be a detailed reference for the ACM/ICPC contests.
 
 ## Progress
-Fixing...
+Almost done.
 
 ## TODO
 Add & Test the merge-split treap.

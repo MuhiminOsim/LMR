@@ -18,6 +18,7 @@
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\titlespacing{\paragraph}{0pt}{0pt}{10pt}
 
 \definecolor{numbercolor}{rgb}{.3,0,0}
 \definecolor{identifiercolor}{rgb}{.3,0,.3}
@@ -29,7 +30,6 @@
 	breaklines=true,
 	frame=single,
 	language=c++,
-	mathescape=true,
 	tabsize=1,
 	numbers=left,
 	numbersep=3.5pt,
@@ -52,7 +52,7 @@
 \begin{document}
 	\maketitle
 	\begin{multicols}{2}
-		\setcounter{tocdepth}{2}
+		\setcounter{tocdepth}{3}
 		\begingroup
 		\let\cleardoublepage\relax
 		\let\clearpage\relax
@@ -64,168 +64,181 @@
 			\subsection{Vimrc}
 				\lstinputlisting[language=]{src/environment/vimrc}
 		\section{Data Structure}
+			\subsection{Balanced tree}
+				\subsubsection{Link-cut tree}
+					\input{src/data-structure/balanced-tree/link-cut-tree.tex}
+				\subsubsection{Splay operation}
+					\input{src/data-structure/balanced-tree/splay-operation.tex}
 			\subsection{KD tree}
-				\lstinputlisting{src/data_structure/kd_tree.cpp}
-			\subsection{Splay}
-				\lstinputlisting{src/data_structure/splay_operations.cpp}
-			\subsection{Link-cut tree}
-				\lstinputlisting{src/data_structure/lct_access.cpp}
-		\section{Formula}
-			\subsection{Zeller’s congruence}
-				\lstinputlisting{src/formula/zeller.cpp}
-			\subsection{Lattice points below segment}
-				\lstinputlisting{src/formula/lattice.cpp}
-			\subsection{Adaptive Simpson's method}
-				\lstinputlisting{src/formula/simpson.cpp}
-			\subsection{Simplex}
-				\lstinputlisting{src/formula/simplex.cpp}
-			\subsection{Extended Eratosthenes sieve}
-				\lstinputlisting{src/formula/ees.cpp}
-			\subsection{Neural network}
-				\lstinputlisting{src/formula/neural_network.cpp}
-		\section{Number theory}
-			\subsection{Fast power module}
-				\lstinputlisting{src/number_theory/fpm.cpp}
-			\subsection{Euclidean algorithm}
-				\lstinputlisting{src/number_theory/exgcd.cpp}
-			\subsection{Discrete Fourier transform}
-				\lstinputlisting{src/number_theory/dft.cpp}
-			\subsection{Fast Walsh-Hadamard transform}
-				\lstinputlisting{src/number_theory/fwt.cpp}
-			\subsection{Number theoretic transform}
-				\lstinputlisting{src/number_theory/ntt.cpp}
-			\subsection{Polynomial operation}
-				\lstinputlisting{src/number_theory/polynomial.cpp}
-			\subsection{Chinese remainder theorem}
-				\lstinputlisting{src/number_theory/crt.cpp}
-			\subsection{Linear Recurrence}
-				\lstinputlisting{src/number_theory/linear_rec.cpp}
-			\subsection{Berlekamp Massey algorithm}
-				\lstinputlisting{src/number_theory/berlekamp_massey.cpp}
-			\subsection{Baby step giant step algorithm}
-				\lstinputlisting{src/number_theory/bsgs.cpp}
-			\subsection{Pell equation}
-				\lstinputlisting{src/number_theory/pell.cpp}
-			\subsection{Quadric residue}
-				\lstinputlisting{src/number_theory/quadric_residue.cpp}
-			\subsection{Miller Rabin primality test}
-				\lstinputlisting{src/number_theory/miller_rabin.cpp}
-			\subsection{Pollard's Rho algorithm}
-				\lstinputlisting{src/number_theory/pollard_rho.cpp}
+				\input{src/data-structure/kd-tree.tex}
 		\section{Geometry}
-				\lstinputlisting{src/geometry/geometry.cpp}
-			\subsection{Point}
-				\lstinputlisting{src/geometry/point.cpp}
-			\subsection{Line}
-				\lstinputlisting{src/geometry/line.cpp}
+			\input{src/geometry/geometry.tex}
+			\subsection{3D geometry}
+				\subsubsection{3D point}
+					\input{src/geometry/3d-geometry/3d-point.tex}
+				\subsubsection{3D line}
+					\input{src/geometry/3d-geometry/3d-line.tex}
+				\subsubsection{3D convex hull}
+					\input{src/geometry/3d-geometry/3d-convex-hull.tex}
 			\subsection{Circle}
-				\lstinputlisting{src/geometry/circle.cpp}
-			\subsection{Centers of a triangle}
-				\lstinputlisting{src/geometry/center.cpp}
-			\subsection{Fermat point}
-				\lstinputlisting{src/geometry/fermat.cpp}
-			\subsection{Convex hull}
-				\lstinputlisting{src/geometry/convex_hull.cpp}
-			\subsection{Half plane intersection}
-				\lstinputlisting{src/geometry/half_plane_intersection.cpp}
-			\subsection{Nearest pair of points}
-				\lstinputlisting{src/geometry/nearest_pair.cpp}
-			\subsection{Minimum circle}
-				\lstinputlisting{src/geometry/minimum_circle.cpp}
-			\subsection{Intersection of a polygon and a circle}
-				\lstinputlisting{src/geometry/polygon_circle_intersect.cpp}
-			\subsection{Union of circles}
-				\lstinputlisting{src/geometry/circle_union.cpp}
-			\subsection{Delaunay triangulation}
-				\lstinputlisting{src/geometry/delaunay.cpp}
-			\subsection{3D point}
-				\lstinputlisting{src/geometry/point3.cpp}
-			\subsection{3D line}
-				\lstinputlisting{src/geometry/line3.cpp}
-			\subsection{3D convex hull}
-				\lstinputlisting{src/geometry/convex_hull3.cpp}
+				\input{src/geometry/circle/circle.tex}
+				\subsubsection{Intersection of a polygon and a circle}
+					\input{src/geometry/circle/intersection-of-a-polygon-and-a-circle.tex}
+				\subsubsection{Minimum circle}
+					\input{src/geometry/circle/minimum-circle.tex}
+				\subsubsection{Union of circles}
+					\input{src/geometry/circle/union-of-circles.tex}
+			\subsection{Line}
+				\input{src/geometry/line/line.tex}
+				\subsubsection{Half plane intersection}
+					\input{src/geometry/line/half-plane-intersection.tex}
+			\subsection{Point}
+				\input{src/geometry/point/point.tex}
+				\subsubsection{Convex hull}
+					\input{src/geometry/point/convex-hull.tex}
+				\subsubsection{Delaunay triangulation}
+					\input{src/geometry/point/delaunay-triangulation.tex}
+				\subsubsection{Nearest pair of points}
+					\input{src/geometry/point/nearest-pair-of-points.tex}
+				\subsubsection{Fermat point}
+					\input{src/geometry/point/fermat-point.tex}
+				\subsubsection{Triangle center}
+					\input{src/geometry/point/triangle-center.tex}
 		\section{Graph}
-				\lstinputlisting{src/graph/graph.cpp}
-			\subsection{Hopcoft-Karp algorithm}
-				\lstinputlisting{src/graph/hopcoft_karp.cpp}
-			\subsection{Kuhn-Munkres algorithm}
-				\lstinputlisting{src/graph/kuhn_munkres.cpp}
-			\subsection{Blossom algorithm}
-				\lstinputlisting{src/graph/blossom.cpp}
-			\subsection{Weighted blossom algorithm}
-				\lstinputlisting{src/graph/weighted_blossom.cpp}
-			\subsection{Maximum flow}
-				\lstinputlisting{src/graph/maximum_flow.cpp}
-			\subsection{Minimum cost flow}
-				\lstinputlisting{src/graph/minimum_cost_flow.cpp}
-			\subsection{Stoer Wagner algorithm}
-				\lstinputlisting{src/graph/stoer_wagner.cpp}
-			\subsection{DN maximum clique}
-				\lstinputlisting{src/graph/maximum_clique.cpp}
-			\subsection{Dominator tree}
-				\lstinputlisting{src/graph/dominator_tree.cpp}
-			\subsection{Tarjan}
-				\lstinputlisting{src/graph/tarjan.cpp}
-		\section{String}
-			\subsection{Minimum representation}
-				\lstinputlisting{src/string/minimum_representation.cpp}
-			\subsection{Manacher}
-				\lstinputlisting{src/string/manacher.cpp}
-			\subsection{Suffix array}
-				\lstinputlisting{src/string/suffix_array.cpp}
-			\subsection{Suffix automaton}
-				\lstinputlisting{src/string/suffix_automaton.cpp}
-			\subsection{Palindromic tree}
-				\lstinputlisting{src/string/palindromic_tree.cpp}
-			\subsection{Regular expression}
-				\lstinputlisting[mathescape=false]{src/string/regex.cpp}
-		\section{Tips}
-			\subsection{Java}
-				\lstinputlisting[language=java]{src/tips/Main.java}
-			\subsection{Random numbers}
-				\lstinputlisting{src/tips/random.cpp}
-			\subsection{Formatting}
-				\lstinputlisting{src/tips/format.cpp}
-			\subsection{Fast IO}
-				\lstinputlisting{src/tips/fast_io.cpp}
-			\subsection{Stack hack}
-				\lstinputlisting{src/tips/stack_hack.cpp}
-			\subsection{Time hack}
-				\lstinputlisting{src/tips/time_hack.cpp}
-			\subsection{Builtin functions}
-				\input{tex/builtin.tex}
-			\subsection{Prufer sequence}
-				\input{tex/prufer_sequence.tex}
-			\subsection{Spanning tree counting}
-				\input{tex/spanning_tree_counting.tex}
+			\input{src/graph/graph.tex}
+			\subsection{Characteristic}
+				\subsubsection{Euler characteristic}
+					\input{src/graph/characteristic/euler-characteristic.tex}
+			\subsection{Clique}
+				\subsubsection{DN maximum clique}
+					\input{src/graph/clique/dn-maximum-clique.tex}
+			\subsection{Cut}
+				\subsubsection{2-SAT}
+					\input{src/graph/cut/2_sat.tex}
+				\subsubsection{Dominator tree}
+					\input{src/graph/cut/dominator-tree.tex}
+				\subsubsection{Stoer Wagner algorithm}
+					\input{src/graph/cut/stoer-wagner-algorithm.tex}
+				\subsubsection{Tarjan}
+					\input{src/graph/cut/tarjan.tex}
+			\subsection{Flow}
+				\subsubsection{Maximum flow}
+					\input{src/graph/flow/maximum-flow.tex}
+				\subsubsection{Minimum cost flow}
+					\input{src/graph/flow/minimum-cost-flow.tex}
 			\subsection{Matching}
-				\input{tex/tutte.tex}
-			\subsection{Lucas's theorem}
-				\input{tex/lucas.tex}
-			\subsection{Mobius inversion}
-				\input{tex/mobius.tex}
-			\subsection{2-SAT}
-				\input{tex/2_sat.tex}
+				\input{src/graph/matching/matching.tex}
+				\subsubsection{Blossom algorithm}
+					\input{src/graph/matching/blossom-algorithm.tex}
+				\subsubsection{Blossom algorithm (weighted)}
+					\input{src/graph/matching/blossom-algorithm-weighted.tex}
+				\subsubsection{Hopcoft-Karp algorithm}
+					\input{src/graph/matching/hopcoft-karp-algorithm.tex}
+				\subsubsection{Kuhn-Munkres algorithm}
+					\input{src/graph/matching/kuhn-munkres-algorithm.tex}
+			\subsection{Tree}
+				\subsection{Prufer sequence}
+					\input{src/graph/tree/prufer_sequence.tex}
+				\subsection{Spanning tree counting}
+					\input{src/graph/tree/spanning_tree_counting.tex}
+		\section{Mathematics}
+			\subsection{Computation}
+				\subsubsection{Adaptive Simpson's method}
+					\input{src/mathematics/computation/adaptive-simpsons-method.tex}
+				\subsubsection{Euclidean-like algorithm}
+					\input{src/mathematics/computation/euclidean-like-algorithm.tex}
+				\subsubsection{Extended Eratosthenes sieve}
+					\input{src/mathematics/computation/extended-eratosthenes-sieve.tex}
+				\subsubsection{Fast power module}
+					\input{src/mathematics/computation/fast-power-module.tex}
+				\subsubsection{Lucas's theorem}
+					\input{src/mathematics/computation/lucass-theorem.tex}
+				\subsubsection{Mobius inversion}
+					\input{src/mathematics/computation/mobius-inversion.tex}
+				\subsubsection{Zeller’s congruence}
+					\input{src/mathematics/computation/zellers-congruence.tex}
 			\subsection{Dynamic programming}
-				\input{tex/dp.tex}
-			\subsection{Interesting numbers}
-				\input{tex/numbers.tex}
+				\input{src/mathematics/dynamic-programming/dynamic-programming.tex}
+			\subsection{Equality and inequality}
+				\subsubsection{Baby step giant step algorithm}
+					\input{src/mathematics/equality-and-inequality/baby-step-giant-step.tex}
+				\subsubsection{Chinese remainder theorem}
+					\input{src/mathematics/equality-and-inequality/chinese-remainder-theorem.tex}
+				\subsubsection{Extended Euclidean algorithm}
+					\input{src/mathematics/equality-and-inequality/extended-euclidean-algorithm.tex}
+				\subsubsection{Pell equation}
+					\input{src/mathematics/equality-and-inequality/pell-equation.tex}
+				\subsubsection{Quadric residue}
+					\input{src/mathematics/equality-and-inequality/quadric-residue.tex}
+				\subsubsection{Simplex}
+					\input{src/mathematics/equality-and-inequality/simplex.tex}
 			\subsection{Game theory}
-				\input{tex/games.tex}
-			\subsection{Lyndon word}
-				\input{tex/lyndon.tex}
-			\subsection{Delaunay triangulation}
-				\input{tex/delaunay.tex}
-			\subsection{Euler characteristic}
-				\input{tex/euler_char.tex}
-		\section{Appendix}
-			\subsection{Table of derivatives \& integrals}
-				\input{tex/derivative.tex}
-				\input{tex/integration.tex}
+				\input{src/mathematics/game-theory/game-theory.tex}
+			\subsection{Machine learning}
+				\subsubsection{Neural network}
+					\input{src/mathematics/machine-learning/neural-network.tex}
+			\subsection{Primality}
+				\subsubsection{Miller Rabin primality test}
+					\input{src/mathematics/primality/miller-rabin-primality-test.tex}
+				\subsubsection{Pollard's Rho algorithm}
+					\input{src/mathematics/primality/pollards-rho-algorithm.tex}
+			\subsection{Recurrence relation}
+				\subsubsection{Berlekamp Massey algorithm}
+					\input{src/mathematics/recurrence-relation/berlekamp-massey-algorithm.tex}
+				\subsubsection{Linear Recurrence}
+					\input{src/mathematics/recurrence-relation/linear-recurrence.tex}
+			\subsection{Sequence manipulation}
+				\subsubsection{Discrete Fourier transform}
+					\input{src/mathematics/sequence-manipulation/discrete-fourier-transform.tex}
+				\subsubsection{Fast Walsh-Hadamard transform}
+					\input{src/mathematics/sequence-manipulation/fast-walsh-hadamard-transform.tex}
+				\subsubsection{Number theoretic transform}
+					\input{src/mathematics/sequence-manipulation/number-theoretic-transform.tex}
+				\subsubsection{Polynomial operation}
+					\input{src/mathematics/sequence-manipulation/polynomial-operation.tex}
+		\section{String}
+			\subsection{Decomposition}
+				\subsubsection{Lyndon word}
+					\input{src/string/decomposition/lyndon-word.tex}
+			\subsection{Matching}
+				\subsubsection{Minimal string rotation}
+					\input{src/string/matching/minimal-string-rotation.tex}
+			\subsection{Palindrome}
+				\subsubsection{Manacher}
+					\input{src/string/palindrome/manacher.tex}
+				\subsubsection{Palindromic tree}
+					\input{src/string/palindrome/palindromic-tree.tex}
+			\subsection{Suffix}
+				\subsubsection{Suffix array}
+					\input{src/string/suffix/suffix-array.tex}
+				\subsubsection{Suffix automaton}
+					\input{src/string/suffix/suffix-automaton.tex}
+		\section{System}
+			\subsection{Builtin functions}
+				\input{src/system/builtin.tex}
+			\subsection{Fast IO}
+				\input{src/system/fast-io.tex}
+			\subsection{Formatting}
+				\input{src/system/formatting.tex}
+			\subsection{Java}
+				\input{src/system/java.tex}
+			\subsection{Random numbers}
+				\input{src/system/random-numbers.tex}
 			\subsection{Regular expression}
-				\input{tex/regex.tex}
-			\subsection{Operator precedence}
-				\input{tex/op.tex}
+				\input{src/system/regular-expression.tex}
+			\subsection{Stack hack}
+				\input{src/system/stack-hack.tex}
+			\subsection{Time hack}
+				\input{src/system/time-hack.tex}
+		\section{Appendix}
+			\subsection{Table of formulae}
+				\input{src/appendix/table-of-formulae.tex}
+			\subsection{Table of integrals}
+				\input{src/appendix/table-of-integrals.tex}
+			\subsection{Table of regular expression}
+				\input{src/appendix/table-of-regular-expression.tex}
+			\subsection{Table of operator precedence}
+				\input{src/appendix/table-of-operator-precedence.tex}
 		}
 		\end{spacing}
 		\endgroup

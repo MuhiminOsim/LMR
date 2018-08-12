@@ -1,0 +1,11 @@
+Usage:
+\begin{enumerate}
+\item \texttt{head}: The first state.
+\item \texttt{tail}: The last state. Terminating states can be reached via visiting the ancestors of tail.
+\item \texttt{state::len}: The longest length of the string in the state.
+\item \texttt{state::right - 1}: The first location in the string where the state can be reached
+\item \texttt{state::parent}: the parent link.
+\item \texttt{state::dest}: the automaton link.
+\end{enumerate}
+\lstinputlisting{src/string/suffix/suffix-automaton.cpp}
+
