@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1536545731 "main.tex" "main.pdf" "main" 1536545770
+["pdflatex"] 1536620993 "main.tex" "main.pdf" "main" 1536620996
   "LICENSE" 1535737342 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -152,9 +152,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1536545734 19821 ba53718ed6c307709cc63eba6a842457 ""
-  "main.tex" 1536545769 10048 b42dd5236deb77e3efb75b83e29ac85a ""
-  "main.toc" 1536545734 10047 aa6dbac7fb77d4782005788ffc9af5d3 ""
+  "main.aux" 1536620996 20009 d37bb2c159c7d88fd967b872d79ef5b6 ""
+  "main.tex" 1536620953 10140 de6aaeb7a9c0683f81d96471bc1e24b1 ""
+  "main.toc" 1536620996 10114 f5180499bb2856a3413c01db969e1abb ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1535737342 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1535737342 17141 fc845aa61fe185e4ef964492355424de ""
@@ -198,6 +198,8 @@
   "src/geometry/point/point.tex" 1535737342 95 c8a4eef7a38d65bcafea26410f073969 ""
   "src/geometry/point/triangle-center.cpp" 1535737342 443 d51461b0c21aabe451fda424b467d5f7 ""
   "src/geometry/point/triangle-center.tex" 1535737342 346 51278ba10ecc1d64dba95844ab375293 ""
+  "src/graph/characteristic/chordal-graph.cpp" 1536620000 1669 2c2c793689e8b3eecc5f8ab71fbb44a0 ""
+  "src/graph/characteristic/chordal-graph.tex" 1536620976 2049 8eebc70e91f960d2b971e2b58bf5e052 ""
   "src/graph/characteristic/euler-characteristic.tex" 1535737342 1552 577cd4ba8f8c385297374cf5717f27cb ""
   "src/graph/clique/dn-maximum-clique.cpp" 1535737342 2932 95945391e2cacf397007b6bb7d3f0ee1 ""
   "src/graph/clique/dn-maximum-clique.tex" 1535737342 333 45309cbd2e03e1e503201db95acaaa34 ""
@@ -228,7 +230,7 @@
   "src/mathematics/computation/adaptive-simpsons-method.cpp" 1535737342 632 48c5f40feaa6b2632faebdd8830dd421 ""
   "src/mathematics/computation/adaptive-simpsons-method.tex" 1535737342 137 4a071e7251e1bad98c50ed98c9790552 ""
   "src/mathematics/computation/dirichlet-convolution.cpp" 1536545073 884 d5b9b09399b0fa865915dfc1b3b1202a ""
-  "src/mathematics/computation/dirichlet-convolution.tex" 1536545724 2722 a90ffff4c236fd9e83181f2c58390138 ""
+  "src/mathematics/computation/dirichlet-convolution.tex" 1536570756 2722 a90ffff4c236fd9e83181f2c58390138 ""
   "src/mathematics/computation/euclidean-like-algorithm.cpp" 1535737342 297 fa1cfdd72ecc357a0c009e18864e28e4 ""
   "src/mathematics/computation/euclidean-like-algorithm.tex" 1535737342 123 8cd5ba01e57a452648d88655b21d3b1c ""
   "src/mathematics/computation/extended-eratosthenes-sieve.cpp" 1535737342 2202 6e66fc7fd0302569dd556ab38d4b82c8 ""
@@ -292,7 +294,7 @@
   "src/system/stack-hack.tex" 1535737342 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1535737342 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.log"
-  "main.aux"
   "main.pdf"
   "main.toc"
+  "main.log"
+  "main.aux"

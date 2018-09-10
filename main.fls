@@ -340,6 +340,11 @@ INPUT src/graph/graph.tex
 INPUT src/graph/graph.cpp
 INPUT src/graph/graph.cpp
 INPUT src/graph/graph.cpp
+INPUT src/graph/characteristic/chordal-graph.tex
+INPUT src/graph/characteristic/chordal-graph.tex
+INPUT src/graph/characteristic/chordal-graph.cpp
+INPUT src/graph/characteristic/chordal-graph.cpp
+INPUT src/graph/characteristic/chordal-graph.cpp
 INPUT src/graph/characteristic/euler-characteristic.tex
 INPUT src/graph/characteristic/euler-characteristic.tex
 INPUT src/graph/clique/dn-maximum-clique.tex
