@@ -406,6 +406,11 @@ INPUT src/mathematics/computation/adaptive-simpsons-method.tex
 INPUT src/mathematics/computation/adaptive-simpsons-method.cpp
 INPUT src/mathematics/computation/adaptive-simpsons-method.cpp
 INPUT src/mathematics/computation/adaptive-simpsons-method.cpp
+INPUT src/mathematics/computation/dirichlet-convolution.tex
+INPUT src/mathematics/computation/dirichlet-convolution.tex
+INPUT src/mathematics/computation/dirichlet-convolution.cpp
+INPUT src/mathematics/computation/dirichlet-convolution.cpp
+INPUT src/mathematics/computation/dirichlet-convolution.cpp
 INPUT src/mathematics/computation/euclidean-like-algorithm.tex
 INPUT src/mathematics/computation/euclidean-like-algorithm.tex
 INPUT src/mathematics/computation/euclidean-like-algorithm.cpp

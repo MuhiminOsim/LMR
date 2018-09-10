@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1535759314 "main.tex" "main.pdf" "main" 1535759317
+["pdflatex"] 1536545731 "main.tex" "main.pdf" "main" 1536545770
   "LICENSE" 1535737342 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -152,9 +152,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1535759317 19520 f14c8caa2491caa12cc1a56ebb07a885 ""
-  "main.tex" 1535737342 9940 84961df77d40613ebc5c903d12b5bacc ""
-  "main.toc" 1535759317 9897 a83148a4a651ad84281b5a1fe7f9d75b ""
+  "main.aux" 1536545734 19821 ba53718ed6c307709cc63eba6a842457 ""
+  "main.tex" 1536545769 10048 b42dd5236deb77e3efb75b83e29ac85a ""
+  "main.toc" 1536545734 10047 aa6dbac7fb77d4782005788ffc9af5d3 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1535737342 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1535737342 17141 fc845aa61fe185e4ef964492355424de ""
@@ -182,7 +182,7 @@
   "src/geometry/circle/union-of-circles.tex" 1535737342 62 b7ecd2408e18a26d11bde8c70bcd0ca2 ""
   "src/geometry/geometry.cpp" 1535737342 267 c3e2680c92ec91d8e21eeab3f9848bcf ""
   "src/geometry/geometry.tex" 1535737342 105 4678d48c58fe06467624423e42c105ef ""
-  "src/geometry/line/half-plane-intersection.cpp" 1535737342 1987 a54179e885b62c80c97b608d11f2825c ""
+  "src/geometry/line/half-plane-intersection.cpp" 1535779267 1985 dab844a118dac0f1160e62e7d6a3a013 ""
   "src/geometry/line/half-plane-intersection.tex" 1535737342 207 53f76695930d1da809136326142e860c ""
   "src/geometry/line/line.cpp" 1535737342 1852 66129f4578e6f75c8a4f935fcca51351 ""
   "src/geometry/line/line.tex" 1535737342 48 737f21ffdeb18a73df789c8c55b9a00e ""
@@ -227,6 +227,8 @@
   "src/graph/tree/spanning_tree_counting.tex" 1535737342 908 966ec6854431b791afa26b86eaabd4d7 ""
   "src/mathematics/computation/adaptive-simpsons-method.cpp" 1535737342 632 48c5f40feaa6b2632faebdd8830dd421 ""
   "src/mathematics/computation/adaptive-simpsons-method.tex" 1535737342 137 4a071e7251e1bad98c50ed98c9790552 ""
+  "src/mathematics/computation/dirichlet-convolution.cpp" 1536545073 884 d5b9b09399b0fa865915dfc1b3b1202a ""
+  "src/mathematics/computation/dirichlet-convolution.tex" 1536545724 2722 a90ffff4c236fd9e83181f2c58390138 ""
   "src/mathematics/computation/euclidean-like-algorithm.cpp" 1535737342 297 fa1cfdd72ecc357a0c009e18864e28e4 ""
   "src/mathematics/computation/euclidean-like-algorithm.tex" 1535737342 123 8cd5ba01e57a452648d88655b21d3b1c ""
   "src/mathematics/computation/extended-eratosthenes-sieve.cpp" 1535737342 2202 6e66fc7fd0302569dd556ab38d4b82c8 ""
@@ -290,7 +292,7 @@
   "src/system/stack-hack.tex" 1535737342 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1535737342 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.aux"
   "main.log"
+  "main.aux"
   "main.pdf"
   "main.toc"
