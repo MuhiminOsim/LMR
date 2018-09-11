@@ -1,0 +1,8 @@
+PWD D:/LMR/src/appendix
+INPUT c:/texlive/2018/texmf.cnf
+INPUT c:/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT table-of-integrals.tex
+OUTPUT table-of-integrals.log
+OUTPUT table-of-integrals.pdf
+INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
