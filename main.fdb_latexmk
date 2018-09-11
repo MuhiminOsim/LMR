@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1536642618 "main.tex" "main.pdf" "main" 1536642621
+["pdflatex"] 1536643088 "main.tex" "main.pdf" "main" 1536643092
   "LICENSE" 1535737342 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,14 +156,14 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1536642621 20589 87377378b6eff38f51516f64fa2b723d ""
+  "main.aux" 1536643092 20428 bf9fdb1b811c4a3142cf83e0090a10dd ""
   "main.tex" 1536628948 10206 d69b10e2815288f2b57f9a0fb676408e ""
-  "main.toc" 1536642621 10568 c04431e69ad28a8e17a77770b7bb1fb3 ""
+  "main.toc" 1536643092 10407 83e76ae27e9b3929f9b69e7902095aac ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1535737342 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1536642609 18833 2885a6481ced15594041126e1389c309 ""
   "src/appendix/table-of-operator-precedence.tex" 1535737342 1980 c337260486fcb6b544cb3b6748980031 ""
-  "src/appendix/table-of-regular-expression.tex" 1535737342 4232 db78973afbbfcd02b1cc039c2e8b6441 ""
+  "src/appendix/table-of-regular-expression.tex" 1536643060 4192 b5311ffefbfaba703f5dff4096a910e6 ""
   "src/data-structure/balanced-tree/link-cut-tree.cpp" 1535737342 255 3e5fd1c90bee232c8a8560cfd1ad1699 ""
   "src/data-structure/balanced-tree/link-cut-tree.tex" 1535737342 70 fca9ed487b38f3b0c1807deca9f38c18 ""
   "src/data-structure/balanced-tree/splay-operation.tex" 1535737342 70 fca9ed487b38f3b0c1807deca9f38c18 ""
@@ -258,7 +258,7 @@
   "src/mathematics/equality-and-inequality/quadric-residue.tex" 1535737342 154 a225601c60970f4e686da54846526829 ""
   "src/mathematics/equality-and-inequality/simplex.cpp" 1535737342 1512 3a6700bbaa58645894484b5c7d3f6bfb ""
   "src/mathematics/equality-and-inequality/simplex.tex" 1535737342 357 7fb2a32808de3661900e7c55ad8fae80 ""
-  "src/mathematics/game-theory/game-theory.tex" 1535737342 1671 578ac21eac1c3e54eaced0755a89c835 ""
+  "src/mathematics/game-theory/game-theory.tex" 1536643010 1663 2e67466ddeffaf95ce8827444b97127c ""
   "src/mathematics/machine-learning/neural-network.cpp" 1535737342 3859 2f12aee52e7c7bfd296021aa0252eb9d ""
   "src/mathematics/machine-learning/neural-network.tex" 1535737342 138 3942a809a58f1b3ce72f133a0afe5eb5 ""
   "src/mathematics/primality/miller-rabin-primality-test.cpp" 1535737342 593 d1c6ce45f9ccd9872fa2a904951f1626 ""
@@ -298,7 +298,7 @@
   "src/system/stack-hack.tex" 1535737342 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1535737342 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.toc"
-  "main.log"
   "main.pdf"
+  "main.toc"
   "main.aux"
+  "main.log"
