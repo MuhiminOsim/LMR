@@ -159,6 +159,8 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/esint.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/esint.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -205,6 +207,11 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/uesint.fd
+INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/uesint.fd
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT LICENSE
 INPUT LICENSE
 OUTPUT main.pdf
@@ -222,6 +229,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 OUTPUT main.toc
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT src/environment/vimrc
@@ -610,5 +620,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb

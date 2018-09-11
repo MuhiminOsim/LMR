@@ -1,3 +1,23 @@
+\paragraph{Variable Substitution}
+
+$$\iint_{T(D)}f(x,y)\mathrm{d}x\mathrm{d}y=\iint_{D}f(x(u,v),y(u,v))\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\mathrm{d}u\mathrm{d}v$$
+
+\subparagraph{Substitution with polar coordinates}
+
+$$x=r\cos\theta,y=r\sin\theta$$
+$$\left|\frac{\partial(x,y)}{\partial(r,\theta)}\right|=r$$
+
+\subparagraph{Substitution with cylindrical coordinates}
+
+$$x=r\cos\theta,y=r\sin\theta,z=z$$
+$$\left|\frac{\partial(x,y,z)}{\partial(r,\theta,z)}\right|=r$$
+
+\subparagraph{Substitution with spherical coordinates}
+
+$$x=r\sin\varphi\cos\theta,y=r\sin\varphi\sin\theta,z=r\cos\varphi$$
+$$\left|\frac{\partial(x,y,z)}{\partial(r,\varphi,\theta)}\right|=r^2\sin\varphi$$
+
+\paragraph{Differentiation}
 \def\sinh{\mathop{\rm sinh}\nolimits}
 \def\cosh{\mathop{\rm cosh}\nolimits}
 \def\sech{\mathop{\rm sech}\nolimits}
@@ -44,9 +64,11 @@
 \newcommand{\md}{\mathrm{d}}
 \newcommand{\me}{\mathrm{e}}
 
+\paragraph{Integration}
+
 \begin{tiny}
 
-\paragraph{$ax+b$ ($a\neq 0$)}
+\subparagraph{$ax+b$ ($a\neq 0$)}
 \begin{enumerate}
 
 \item $ \int \frac{x}{ax+b} \md x = \frac{1}{a^2} (ax+b-b\ln|ax+b|) + C $
@@ -65,7 +87,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{ax+b}$}
+\subparagraph{$\sqrt{ax+b}$}
 
 \begin{enumerate}
 
@@ -92,7 +114,7 @@
 
 \end{enumerate}
 
-\paragraph{$x^2 \pm a^2$}
+\subparagraph{$x^2 \pm a^2$}
 
 \begin{enumerate}
 
@@ -105,7 +127,7 @@
 
 \end{enumerate}
 
-\paragraph{$ax^2+b$ ($a>0$)}
+\subparagraph{$ax^2+b$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -128,7 +150,7 @@
 
 \end{enumerate}
 
-\paragraph{$ax^2+bx+c$ ($a>0$)}
+\subparagraph{$ax^2+bx+c$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -141,7 +163,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{x^2+a^2}$ ($a>0$)}
+\subparagraph{$\sqrt{x^2+a^2}$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -175,7 +197,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{x^2-a^2}$ ($a>0$)}
+\subparagraph{$\sqrt{x^2-a^2}$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -209,7 +231,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{a^2-x^2}$ ($a>0$)}
+\subparagraph{$\sqrt{a^2-x^2}$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -243,7 +265,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{\pm ax^2+bx+c}$ ($a>0$)}
+\subparagraph{$\sqrt{\pm ax^2+bx+c}$ ($a>0$)}
 
 \begin{enumerate}
 
@@ -264,7 +286,7 @@
 
 \end{enumerate}
 
-\paragraph{$\sqrt{\pm\frac{x-a}{x-b}}$ \& $\sqrt{(x-a)(x-b)}$}
+\subparagraph{$\sqrt{\pm\frac{x-a}{x-b}}$ \& $\sqrt{(x-a)(x-b)}$}
 
 \begin{enumerate}
 
@@ -278,7 +300,7 @@
 
 \end{enumerate}
 
-\paragraph{Triangular function}
+\subparagraph{Triangular function}
 
 \begin{enumerate}
 
@@ -345,7 +367,7 @@
 
 \end{enumerate}
 
-\paragraph{Inverse triangular function ($a>0$)}
+\subparagraph{Inverse triangular function ($a>0$)}
 
 \begin{enumerate}
 
@@ -369,13 +391,13 @@
 
 \end {enumerate}
 
-\paragraph{Exponential function}
+\subparagraph{Exponential function}
 
 \begin{enumerate}
 
 \item $ \int a^x \md x= \frac{1}{\ln a} a^x + C$
 
-\item $ \int \me ^{ax}\md x=\frac{1}{a}a^{ax}+C $ 
+\item $ \int \me ^{ax}\md x=\frac{1}{a}a^{ax}+C $
 
 \item $ \int x \me  ^ {ax} \md x=\frac{1}{a^2}(ax-1)a^{ax} +C $
 
@@ -395,7 +417,7 @@
 
 \end{enumerate}
 
-\paragraph{Logarithmic function}
+\subparagraph{Logarithmic function}
 
 \begin{enumerate}
 
@@ -407,9 +429,8 @@
 
 \item $ \int (\ln x)^{n} \md x = x(\ln x)^ n - n \int (\ln x)^{n-1} \md x $
 
-\item $ \int x ^ m(\ln x)^n \md x=\frac{1}{m+1}x^{m+1} (\ln x)^n - \frac{n}{m+1} \int x^m(\ln x)^{n-1}\md x $ 
+\item $ \int x ^ m(\ln x)^n \md x=\frac{1}{m+1}x^{m+1} (\ln x)^n - \frac{n}{m+1} \int x^m(\ln x)^{n-1}\md x $
 
 \end{enumerate}
 
 \end{tiny}
-
