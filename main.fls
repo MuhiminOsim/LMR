@@ -411,6 +411,8 @@ INPUT src/graph/matching/kuhn-munkres-algorithm.tex
 INPUT src/graph/matching/kuhn-munkres-algorithm.cpp
 INPUT src/graph/matching/kuhn-munkres-algorithm.cpp
 INPUT src/graph/matching/kuhn-munkres-algorithm.cpp
+INPUT src/graph/path/lindstrom-gessel-viennot-lemma.tex
+INPUT src/graph/path/lindstrom-gessel-viennot-lemma.tex
 INPUT src/graph/tree/prufer_sequence.tex
 INPUT src/graph/tree/prufer_sequence.tex
 INPUT src/graph/tree/spanning_tree_counting.tex
