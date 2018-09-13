@@ -445,6 +445,8 @@ INPUT src/mathematics/computation/lucass-theorem.tex
 INPUT src/mathematics/computation/lucass-theorem.tex
 INPUT src/mathematics/computation/mobius-inversion.tex
 INPUT src/mathematics/computation/mobius-inversion.tex
+INPUT src/mathematics/computation/polya-enumeration-theorem.tex
+INPUT src/mathematics/computation/polya-enumeration-theorem.tex
 INPUT src/mathematics/computation/zellers-congruence.tex
 INPUT src/mathematics/computation/zellers-congruence.tex
 INPUT src/mathematics/computation/zellers-congruence.cpp
