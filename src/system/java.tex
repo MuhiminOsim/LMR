@@ -43,6 +43,18 @@ Power module: \texttt{.modPow (BigInteger exponent, module)}.
 
 Primality check: \texttt{.isProbablePrime (int certainty)}.
 
+Square root:
+\begin{lstlisting}[language=java]
+public static BigInteger sqrt (BigInteger x) {
+	if (x.equals (BigInteger.ZERO) || x.equals (BigInteger.ONE)) return x;
+	BigInteger d = BigInteger.ZERO.setBit (x.bitLength () / 2);
+	BigInteger d2 = d;
+	for (; ; ) {
+		BigInteger y = d.add (x.divide (d)).shiftRight (1);
+		if (y.equals (d) || y.equals (d2)) return d.min (d2);
+		d2 = d; d = y; } }
+\end{lstlisting}
+
 \paragraph{BigDecimal}
 Literally a \texttt{BigInteger} and a scale.
 
