@@ -556,6 +556,11 @@ INPUT src/string/suffix/suffix-array.tex
 INPUT src/string/suffix/suffix-array.cpp
 INPUT src/string/suffix/suffix-array.cpp
 INPUT src/string/suffix/suffix-array.cpp
+INPUT src/string/suffix/suffix-array-dc3.tex
+INPUT src/string/suffix/suffix-array-dc3.tex
+INPUT src/string/suffix/suffix-array-dc3.cpp
+INPUT src/string/suffix/suffix-array-dc3.cpp
+INPUT src/string/suffix/suffix-array-dc3.cpp
 INPUT src/string/suffix/suffix-automaton.tex
 INPUT src/string/suffix/suffix-automaton.tex
 INPUT src/string/suffix/suffix-automaton.cpp
@@ -591,6 +596,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/courier/pcrr8c.vf
 INPUT src/appendix/table-of-integrals.tex
 INPUT src/appendix/table-of-integrals.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT src/appendix/table-of-range.tex
+INPUT src/appendix/table-of-range.tex
 INPUT src/appendix/table-of-regular-expression.tex
 INPUT src/appendix/table-of-regular-expression.tex
 INPUT src/appendix/table-of-operator-precedence.tex
