@@ -556,11 +556,11 @@ INPUT src/string/suffix/suffix-array.tex
 INPUT src/string/suffix/suffix-array.cpp
 INPUT src/string/suffix/suffix-array.cpp
 INPUT src/string/suffix/suffix-array.cpp
-INPUT src/string/suffix/suffix-array-dc3.tex
-INPUT src/string/suffix/suffix-array-dc3.tex
-INPUT src/string/suffix/suffix-array-dc3.cpp
-INPUT src/string/suffix/suffix-array-dc3.cpp
-INPUT src/string/suffix/suffix-array-dc3.cpp
+INPUT src/string/suffix/suffix-array-sais.tex
+INPUT src/string/suffix/suffix-array-sais.tex
+INPUT src/string/suffix/suffix-array-sais.cpp
+INPUT src/string/suffix/suffix-array-sais.cpp
+INPUT src/string/suffix/suffix-array-sais.cpp
 INPUT src/string/suffix/suffix-automaton.tex
 INPUT src/string/suffix/suffix-automaton.tex
 INPUT src/string/suffix/suffix-automaton.cpp
