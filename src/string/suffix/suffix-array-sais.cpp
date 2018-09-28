@@ -1,6 +1,6 @@
 template <int MAXN = 100000>
 struct SA {
-	int sa[MAXN], rk[MAXN], ht[MAXN], s[MAXN << 1], t[MAX << 1], p[MAXN], cnt[MAXN], cur[MAXN];
+	int sa[MAXN], rk[MAXN], ht[MAXN], s[MAXN << 1], t[MAXN << 1], p[MAXN], cnt[MAXN], cur[MAXN];
 #define pushS(x) sa[cur[s[x]]--] = x
 #define pushL(x) sa[cur[s[x]]++] = x
 #define inducedSort(v) std::fill_n(sa, n, -1); std::fill_n(cnt, m, 0);\
@@ -41,4 +41,3 @@ struct SA {
 			int j = sa[rk[i]-1];
 			while (i+h < n && j+h < n && s[i+h] == s[j+h]) h++;
 			if (ht[rk[i]] = h) h--; } } };
-
