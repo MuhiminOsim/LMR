@@ -67,9 +67,8 @@ struct dinic {
 					ret += flow, ext -= flow; } } }
 		if (!~k) d[u] = -1; return ret; }
 	int solve (flow_edge_list &e, int n_, int s_, int t_) {
-		int ans = 0; n = n_; s = s_; dinic::t = t_;
+		int ans = 0; n = n_; s = s_; t = t_;
 		while (bfs (e)) {
 			for (int i = 0; i < n; ++i) w[i] = e.begin[i];
 			ans += dfs (e, s, INF); }
 		return ans; } };
-

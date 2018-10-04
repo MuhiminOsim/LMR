@@ -26,8 +26,8 @@ struct minimum_cost_flow {
 		n = n_; s = s_; t = t_; std::pair <int, int> ans = std::make_pair (0, 0);
 		while (augment (e)) {
 			int num = INF;
-			for (int i = t; i != s; i = e.dest[prev[i] ^ 1]) {
-				num = std::min (num, e.flow[prev[i]]); }
+			for (int i = t; i != s; i = e.dest[prev[i] ^ 1])
+				num = std::min (num, e.flow[prev[i]]); 
 			ans.first += num;
 			for (int i = t; i != s; i = e.dest[prev[i] ^ 1]) {
 				e.flow[prev[i]] -= num; e.flow[prev[i] ^ 1] += num;
@@ -72,4 +72,3 @@ struct zkw_flow {
 		} while (dfs (e, s, INF)); } while (!modlable ());
 		return std::make_pair (tf, tc);
 	} };
-

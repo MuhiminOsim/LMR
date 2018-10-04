@@ -29,7 +29,7 @@ struct ees {
 				if (i % prime[j] == 0) break; } }
 		for (int d = 0; d <= D; ++d) {
 			long long *pa = powa[d], *pb = powb[d];
-			for (int i = 1; i <= sn; ++i) pa[i] = pre_pow (i, d) - 1; 
+			for (int i = 1; i <= sn; ++i) pa[i] = pre_pow (i, d) - 1;
 			for (int i = 1; i <= sn; ++i) pb[i] = pre_pow (n / i, d) - 1;
 			for (int i = 0; i < psize; ++i) { int &pi = prime[i];
 				for (int j = 1; j <= sn; ++j) if (n / j >= 1LL * pi * pi) {
@@ -60,4 +60,3 @@ int main () {
 	std::cout << e.solve (B) - e.solve (A - 1) << std::endl;
 	return 0;
 }
-
