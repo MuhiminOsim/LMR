@@ -250,9 +250,9 @@ INPUT src/data-structure/balanced-tree/link-cut-tree.cpp
 INPUT src/data-structure/balanced-tree/link-cut-tree.cpp
 INPUT src/data-structure/balanced-tree/splay-operation.tex
 INPUT src/data-structure/balanced-tree/splay-operation.tex
-INPUT src/data-structure/balanced-tree/link-cut-tree.cpp
-INPUT src/data-structure/balanced-tree/link-cut-tree.cpp
-INPUT src/data-structure/balanced-tree/link-cut-tree.cpp
+INPUT src/data-structure/balanced-tree/splay-operation.cpp
+INPUT src/data-structure/balanced-tree/splay-operation.cpp
+INPUT src/data-structure/balanced-tree/splay-operation.cpp
 INPUT src/data-structure/kd-tree.tex
 INPUT src/data-structure/kd-tree.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm

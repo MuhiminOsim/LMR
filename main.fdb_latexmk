@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1538773053 "main.tex" "main.pdf" "main" 1538773056
+["pdflatex"] 1538845733 "main.tex" "main.pdf" "main" 1538845736
   "LICENSE" 1537149287 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,9 +156,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1538773056 22150 643a2d33e124566be9ffcf692917f8f4 ""
+  "main.aux" 1538845736 22141 56c2f2852e027f4d0c0fc2b1421c34ba ""
   "main.tex" 1538640374 10708 8a49f521c48903d823f2ff3de357dba7 ""
-  "main.toc" 1538773056 11549 f9d76e70ac00e8b64060a962934b8a29 ""
+  "main.toc" 1538845736 11549 6716f411a12eed23ee13625120ebe33c ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1537149287 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1537149287 18833 2885a6481ced15594041126e1389c309 ""
@@ -167,7 +167,8 @@
   "src/appendix/table-of-regular-expression.tex" 1537149287 4192 b5311ffefbfaba703f5dff4096a910e6 ""
   "src/data-structure/balanced-tree/link-cut-tree.cpp" 1537149287 255 3e5fd1c90bee232c8a8560cfd1ad1699 ""
   "src/data-structure/balanced-tree/link-cut-tree.tex" 1537149287 70 fca9ed487b38f3b0c1807deca9f38c18 ""
-  "src/data-structure/balanced-tree/splay-operation.tex" 1537149287 70 fca9ed487b38f3b0c1807deca9f38c18 ""
+  "src/data-structure/balanced-tree/splay-operation.cpp" 1538845563 612 4e6ce9ee0e9d53fcb1714491200d9363 ""
+  "src/data-structure/balanced-tree/splay-operation.tex" 1538845718 72 b77a45014627e7c0d29c99def520c51a ""
   "src/data-structure/kd-tree.cpp" 1537149287 4461 ae551665f609b5765918162ab8c7d3fe ""
   "src/data-structure/kd-tree.tex" 1537149287 379 03a9a041af4ef7950553860765e1a13a ""
   "src/environment/vimrc" 1537149287 439 42750c138c3de825a944219abbd04ef2 ""
@@ -305,7 +306,7 @@
   "src/system/stack-hack.tex" 1537149287 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1537149287 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.log"
+  "main.aux"
   "main.toc"
   "main.pdf"
-  "main.aux"
+  "main.log"
