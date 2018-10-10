@@ -1,50 +1,73 @@
-template <int MAXN = 100000, MAXM = 100000>
-struct k_short {
-	int f[MAXN], ff[MAXN];
-	namespace left_tree{
-		struct point { int l, r, h, v, x, y; } tr[MAXN * 40];
-		int rt[MAXN], num;
-		int alloc (point o) { tr[++num]=o; return num; }
-		void start () { num = 0; tr[0].l = tr[0].r = tr[0].h = 0; tr[0].v = INF; }
-		int mg(int x,int y){
-			if(!x)return y;
-			if(tr[x].v>tr[y].v)swap(x,y);
-			int o=alloc(tr[x]);tr[o].r=mg(tr[o].r,y);
-			if(tr[tr[o].l].h<tr[tr[o].r].h)swap(tr[o].l,tr[o].r);
-			tr[o].h=tr[tr[o].r].h+1;return o;}
-		void add(int&k,int v,int x,int y){
-			int o=alloc(tr[0]);
-			tr[o].v=v;tr[o].x=x;tr[o].y=y;
-			k=mg(k,o);	}}
-	using namespace left_tree;
-	struct spfa{
-		void in(){tot=0;CL(fir);}void ins(x,y,z){}
-		void work(int S,int n){
-	}}A;
-	struct Kshort{
-	int tot,n,m,S,T,k,fir[MAXN],va[M],la[M],ne[M];bool v[MAXN];
-	struct point{
-		int x,y,z;point(){}point(int x,int y,int z):x(x),y(y),z(z){}
-		bool operator<(point a)const{return a.z<z;}};
-	priority_queue<point>Q;void in(){tot=0;CL(fir);}
-	void ins(x,y,z){}
-	void init(){//将图读入
-		int i,x,y,z;in();A.in();start();rd(n,m)
-		fr(i,1,m)rd(x,y,z),A.ins(y,x,z),ins(x,y,z);
-		rd(S,T,k);if(S==T)k++;//注意起点终点相同的情况
-		A.work(T,n);}//A是反向边
-	void dfs(int x){
-		if(v[x])return;v[x]=1;if(f[x])rt[x]=rt[f[x]];
-		for(int i=fir[x],y;i;i=ne[i])if(y=la[i],A.d[y]!=inf&&ff[x]!=i)
-			add(rt[x],A.d[y]-A.d[x]+va[i],x,y);
-		for(int i=A.fir[x];i;i=A.ne[i])if(f[A.la[i]]==x)dfs(A.la[i]);}
-	int work(){//返回答案, 没有返回-1
-		int i,x;dfs(T);
-		if(!--k)return A.d[S]==inf?-1:A.d[S];
-		point u,w;if(rt[S])Q.push(point(S,rt[S],A.d[S]+tr[rt[S]].v));
-		for(;k--;){
-			if(Q.empty())return -1;u=Q.top();Q.pop();
-			if(x=mg(tr[u.y].l,tr[u.y].r))
-				Q.push(point(u.x,x,tr[x].v-tr[u.y].v+u.z));
-			if(rt[x=tr[u.y].y])Q.push(point(x,rt[x],u.z+tr[rt[x]].v));}
-		return u.z;}}G;
+const int maxn = 1005, maxe = 10005, maxm = maxe * 30;
+struct A {
+	int x, d;
+	A (int x, int d) : x (x), d (d) {}
+	bool operator < (const A &a) const { return d > a.d; } };
+struct node {
+	int w, i, d;
+	node *lc, *rc;
+	node () {}
+	node (int w, int i) : w (w), i (i), d (0) {}
+	void refresh () { d = rc -> d + 1; }
+} null[maxm], *ptr = null, *root[maxn];
+struct B {
+	int x, w;
+	node *rt;
+	B (int x, node *rt, int w) : x (x), w (w), rt (rt) {}
+	bool operator < (const B &a) const { return w + rt -> w > a.w + a.rt -> w; } };
+std::vector <int> G[maxn], W[maxn], id[maxn]; // Store reversed graph & clear G at the beginning.
+bool vis[maxn], used[maxe];
+int u[maxe], v[maxe], w[maxe]; // Store every edge (uni-directional).
+int d[maxn], p[maxn];
+int n, m, k, s, t; // s, t - beginning and end.
+// main
+for (int i = 0; i <= n; i++) root[i] = null;
+//Read & build the reversed graph.
+Dijkstra ();
+// Clear G, W, id.
+for (int i = 1; i <= n; i++)
+	if (p[i]) { used[p[i]] = true; G[v[p[i]]].push_back (i); }
+for (int i = 1; i <= m; i++) {
+	w[i] -= d[u[i]] - d[v[i]];
+	if (!used[i]) root[u[i]] = merge (root[u[i]], newnode (w[i], i)); }
+dfs (t);
+std::priority_queue <B> heap;
+heap.push (B (s, root[s], 0));
+printf ("%d\n", d[s]); // The least-length path.
+while (--k) {
+	if (heap.empty ()) printf("-1\n");
+	else {
+		int x = heap.top ().x, w = heap.top ().w;
+		node *rt = heap.top ().rt; heap.pop ();
+		printf ("%d\n", d[s] + w + rt -> w);
+		if (rt -> lc != null || rt -> rc != null)
+			heap.push (B (x, merge (rt -> lc, rt -> rc), w));
+		if (root[v[rt -> i]] != null)
+			heap.push (B (v[rt -> i], root[v[rt -> i]], w + rt -> w)); } }
+void Dijkstra () {
+	memset (d, 63, sizeof (d)); d[t] = 0;
+	std::priority_queue <A> heap;
+	heap.push (A (t, 0));
+	while (!heap.empty ()) {
+		int x = heap.top ().x; heap.pop ();
+		if (vis[x]) continue; vis[x] = true;
+		for (int i = 0; i < (int) G[x].size (); i++)
+			if (!vis[G[x][i]] && d[G[x][i]] > d[x] + W[x][i]) {
+				d[G[x][i]] = d[x] + W[x][i];
+				p[G[x][i]] = id[x][i];
+				heap.push (A (G[x][i], d[G[x][i]])); } } }
+void dfs (int x) {
+	root[x] = merge (root[x], root[v[p[x]]]);
+	for (int i = 0; i < (int) G[x].size (); i++) dfs (G[x][i]); }
+node *newnode (int w, int i) {
+	*++ptr = node (w, i);
+	ptr -> lc = ptr -> rc = null;
+	return ptr; }
+node *merge (node *x, node *y) {
+	if (x == null) return y;
+	if (y == null) return x;
+	if (x -> w > y -> w) swap (x, y);
+	node *z = newnode (x -> w, x -> i);
+	z -> lc = x -> lc; z -> rc = merge (x -> rc, y);
+	if (z -> lc -> d > z -> rc -> d) swap (z -> lc, z -> rc);
+	z -> refresh (); return z; }
