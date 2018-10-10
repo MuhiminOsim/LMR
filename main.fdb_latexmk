@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1539188595 "main.tex" "main.pdf" "main" 1539188599
+["pdflatex"] 1539189248 "main.tex" "main.pdf" "main" 1539189252
   "LICENSE" 1537149287 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,9 +156,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1539188599 22148 bbf31992d37d6143da7f4df69a7d9674 ""
-  "main.tex" 1539188586 10651 f3fb76fbafa919f147c7e98d9b545326 ""
-  "main.toc" 1539188599 11450 5a093a7cb021b8ef11f2713bcff1986d ""
+  "main.aux" 1539189251 22352 5a2db576a917a965e5c001aeb0b64a1d ""
+  "main.tex" 1539189133 10746 6944b07eea3282c7e5fe507f1dd2208c ""
+  "main.toc" 1539189251 11524 aeacc21a2d1e8927ba7332ab7bb5ebb8 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1537149287 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1537149287 18833 2885a6481ced15594041126e1389c309 ""
@@ -294,6 +294,8 @@
   "src/string/suffix/suffix-automaton.cpp" 1537149287 1095 b4d17351ba9677ad0775d23f345fcb9e ""
   "src/string/suffix/suffix-automaton.tex" 1537149287 521 ceba171043ba705e93ee7fd344c5c63e ""
   "src/system/builtin.tex" 1537149287 1116 3f720a84b076b26cda8583bfc333f763 ""
+  "src/system/container-memory-release.cpp" 1539189202 75 262ea89e8a0030c087d8f531f717bd71 ""
+  "src/system/container-memory-release.tex" 1539189238 58 331329a61f9fd9d69d017439bf09dd43 ""
   "src/system/fast-io.cpp" 1537149287 1129 c5c07cfff83b7c3f0c0fff6fa4d5e0f9 ""
   "src/system/fast-io.tex" 1537149287 44 74a6c0de92be2a3fbeb095297101d270 ""
   "src/system/formatting.tex" 1537149287 874 b6364e4530859d73f677e9ba37f7c81e ""
@@ -303,7 +305,7 @@
   "src/system/stack-hack.tex" 1537149287 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1537149287 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.pdf"
   "main.log"
   "main.toc"
+  "main.pdf"
   "main.aux"

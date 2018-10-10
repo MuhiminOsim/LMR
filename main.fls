@@ -566,6 +566,11 @@ INPUT src/string/suffix/suffix-automaton.cpp
 INPUT src/string/suffix/suffix-automaton.cpp
 INPUT src/system/builtin.tex
 INPUT src/system/builtin.tex
+INPUT src/system/container-memory-release.tex
+INPUT src/system/container-memory-release.tex
+INPUT src/system/container-memory-release.cpp
+INPUT src/system/container-memory-release.cpp
+INPUT src/system/container-memory-release.cpp
 INPUT src/system/fast-io.tex
 INPUT src/system/fast-io.tex
 INPUT src/system/fast-io.cpp
