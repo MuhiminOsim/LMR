@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1539188340 "main.tex" "main.pdf" "main" 1539188345
+["pdflatex"] 1539188595 "main.tex" "main.pdf" "main" 1539188599
   "LICENSE" 1537149287 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,9 +156,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1539188344 22329 c6a425b915b6222d04993376f8b2dba9 ""
-  "main.tex" 1539188335 10734 5d0ae7e4ade9ce35c2f2e67ea91f14d1 ""
-  "main.toc" 1539188344 11517 85f06c6515515ccec3b8cc6f8d77aa58 ""
+  "main.aux" 1539188599 22148 bbf31992d37d6143da7f4df69a7d9674 ""
+  "main.tex" 1539188586 10651 f3fb76fbafa919f147c7e98d9b545326 ""
+  "main.toc" 1539188599 11450 5a093a7cb021b8ef11f2713bcff1986d ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1537149287 5839 7839ab32d586f68592a577f7564c9827 ""
   "src/appendix/table-of-integrals.tex" 1537149287 18833 2885a6481ced15594041126e1389c309 ""
@@ -291,8 +291,6 @@
   "src/string/palindrome/palindromic-tree.tex" 1537149287 364 af45282d7d71806604a6b3b880256d76 ""
   "src/string/suffix/suffix-array-sais.cpp" 1539181767 2192 710503d188a1e55ccbf190aa8c9d7bcd ""
   "src/string/suffix/suffix-array-sais.tex" 1538579941 198 91b37ffce34ced78b0c48df512be9173 ""
-  "src/string/suffix/suffix-array.cpp" 1537149287 1366 683b59b79935c13f50e4bb3c838d5054 ""
-  "src/string/suffix/suffix-array.tex" 1537149287 345 6f2d6997dc579f79c9971aa273b7b3b9 ""
   "src/string/suffix/suffix-automaton.cpp" 1537149287 1095 b4d17351ba9677ad0775d23f345fcb9e ""
   "src/string/suffix/suffix-automaton.tex" 1537149287 521 ceba171043ba705e93ee7fd344c5c63e ""
   "src/system/builtin.tex" 1537149287 1116 3f720a84b076b26cda8583bfc333f763 ""
@@ -305,7 +303,7 @@
   "src/system/stack-hack.tex" 1537149287 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1537149287 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.aux"
-  "main.toc"
   "main.pdf"
   "main.log"
+  "main.toc"
+  "main.aux"

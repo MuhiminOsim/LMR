@@ -554,11 +554,6 @@ INPUT src/string/palindrome/palindromic-tree.tex
 INPUT src/string/palindrome/palindromic-tree.cpp
 INPUT src/string/palindrome/palindromic-tree.cpp
 INPUT src/string/palindrome/palindromic-tree.cpp
-INPUT src/string/suffix/suffix-array.tex
-INPUT src/string/suffix/suffix-array.tex
-INPUT src/string/suffix/suffix-array.cpp
-INPUT src/string/suffix/suffix-array.cpp
-INPUT src/string/suffix/suffix-array.cpp
 INPUT src/string/suffix/suffix-array-sais.tex
 INPUT src/string/suffix/suffix-array-sais.tex
 INPUT src/string/suffix/suffix-array-sais.cpp
@@ -593,9 +588,9 @@ INPUT src/system/stack-hack.tex
 INPUT src/system/stack-hack.tex
 INPUT src/system/time-hack.tex
 INPUT src/system/time-hack.tex
-INPUT src/appendix/table-of-formulae.tex
-INPUT src/appendix/table-of-formulae.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/courier/pcrr8c.vf
+INPUT src/appendix/table-of-formulae.tex
+INPUT src/appendix/table-of-formulae.tex
 INPUT src/appendix/table-of-integrals.tex
 INPUT src/appendix/table-of-integrals.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
