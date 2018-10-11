@@ -33,7 +33,7 @@ for (int i = 1; i <= m; i++) {
 dfs (t);
 std::priority_queue <B> heap;
 heap.push (B (s, root[s], 0));
-printf ("%d\n", d[s]); // The least-length path.
+printf ("%d\n", d[s]); // The shortest path.
 while (--k) {
 	if (heap.empty ()) printf("-1\n");
 	else {
