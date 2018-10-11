@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1539239102 "main.tex" "main.pdf" "main" 1539239106
+["pdflatex"] 1539239266 "main.tex" "main.pdf" "main" 1539239270
   "LICENSE" 1537149287 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535734939 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535735424 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,11 +156,11 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535740063 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535740124 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535740047 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1539239106 22675 0ad9d04722d5969e226832e5ef47f4a3 ""
+  "main.aux" 1539239270 22675 c58ceaf7d9ece2662ac5ca5d0c5b3231 ""
   "main.tex" 1539239072 10886 a0c60a29d72ab3646a07928b28412f53 ""
-  "main.toc" 1539239106 11637 86566e54f8b7cbc311a20be4274bf823 ""
+  "main.toc" 1539239270 11637 36f2522b85812abbe4dd0398da50aba9 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "src/appendix/table-of-formulae.tex" 1537149287 5839 7839ab32d586f68592a577f7564c9827 ""
+  "src/appendix/table-of-formulae.tex" 1539239243 5837 d62c9b1704dd45f9ff0a55c9a30d61dc ""
   "src/appendix/table-of-integrals.tex" 1537149287 18833 2885a6481ced15594041126e1389c309 ""
   "src/appendix/table-of-operator-precedence.tex" 1537149287 1980 c337260486fcb6b544cb3b6748980031 ""
   "src/appendix/table-of-range.tex" 1537149287 1106 a52e9bd8e986b5198f3771f482fcc745 ""
@@ -309,7 +309,7 @@
   "src/system/stack-hack.tex" 1537149287 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1537149287 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.aux"
   "main.pdf"
-  "main.log"
   "main.toc"
+  "main.aux"
+  "main.log"
