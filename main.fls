@@ -413,6 +413,11 @@ INPUT src/graph/path/k-shortest-path.cpp
 INPUT src/graph/path/k-shortest-path.cpp
 INPUT src/graph/path/lindstrom-gessel-viennot-lemma.tex
 INPUT src/graph/path/lindstrom-gessel-viennot-lemma.tex
+INPUT src/graph/tree/optimum-branching.tex
+INPUT src/graph/tree/optimum-branching.tex
+INPUT src/graph/tree/optimum-branching.cpp
+INPUT src/graph/tree/optimum-branching.cpp
+INPUT src/graph/tree/optimum-branching.cpp
 INPUT src/graph/tree/prufer-sequence.tex
 INPUT src/graph/tree/prufer-sequence.tex
 INPUT src/graph/tree/spanning-tree-counting.tex
@@ -549,6 +554,11 @@ INPUT src/string/decomposition/lyndon-word.tex
 INPUT src/string/decomposition/lyndon-word.cpp
 INPUT src/string/decomposition/lyndon-word.cpp
 INPUT src/string/decomposition/lyndon-word.cpp
+INPUT src/string/matching/exkmp.tex
+INPUT src/string/matching/exkmp.tex
+INPUT src/string/matching/exkmp.cpp
+INPUT src/string/matching/exkmp.cpp
+INPUT src/string/matching/exkmp.cpp
 INPUT src/string/matching/minimal-string-rotation.tex
 INPUT src/string/matching/minimal-string-rotation.tex
 INPUT src/string/matching/minimal-string-rotation.cpp
@@ -603,9 +613,9 @@ INPUT src/system/stack-hack.tex
 INPUT src/system/stack-hack.tex
 INPUT src/system/time-hack.tex
 INPUT src/system/time-hack.tex
+INPUT src/appendix/table-of-formulae.tex
+INPUT src/appendix/table-of-formulae.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/courier/pcrr8c.vf
-INPUT src/appendix/table-of-formulae.tex
-INPUT src/appendix/table-of-formulae.tex
 INPUT src/appendix/table-of-integrals.tex
 INPUT src/appendix/table-of-integrals.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
