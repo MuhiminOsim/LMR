@@ -457,8 +457,6 @@ INPUT src/mathematics/computation/lucass-theorem.tex
 INPUT src/mathematics/computation/lucass-theorem.tex
 INPUT src/mathematics/computation/mobius-inversion.tex
 INPUT src/mathematics/computation/mobius-inversion.tex
-INPUT src/mathematics/computation/polya-enumeration-theorem.tex
-INPUT src/mathematics/computation/polya-enumeration-theorem.tex
 INPUT src/mathematics/computation/zellers-congruence.tex
 INPUT src/mathematics/computation/zellers-congruence.tex
 INPUT src/mathematics/computation/zellers-congruence.cpp
@@ -499,6 +497,13 @@ INPUT src/mathematics/equality-and-inequality/simplex.cpp
 INPUT src/mathematics/equality-and-inequality/simplex.cpp
 INPUT src/mathematics/game-theory/game-theory.tex
 INPUT src/mathematics/game-theory/game-theory.tex
+INPUT src/mathematics/computation/polya-enumeration-theorem.tex
+INPUT src/mathematics/computation/polya-enumeration-theorem.tex
+INPUT src/mathematics/group-theory/schreier-sims.tex
+INPUT src/mathematics/group-theory/schreier-sims.tex
+INPUT src/mathematics/group-theory/schreier-sims.cpp
+INPUT src/mathematics/group-theory/schreier-sims.cpp
+INPUT src/mathematics/group-theory/schreier-sims.cpp
 INPUT src/mathematics/machine-learning/neural-network.tex
 INPUT src/mathematics/machine-learning/neural-network.tex
 INPUT src/mathematics/machine-learning/neural-network.cpp
