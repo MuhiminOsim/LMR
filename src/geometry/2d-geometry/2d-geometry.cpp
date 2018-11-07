@@ -71,9 +71,9 @@ std::vector <point> line_circle_intersect (cl a, cc b) {
 double circle_intersect_area (cc a, cc b) {
 	double d = dis (a.c, b.c);
 	if (sgn (d - (a.r + b.r)) >= 0) return 0;
-	if (sgn (d - abs(a.r - b.r)) <= 0) {
+	if (sgn (d - std::abs(a.r - b.r)) <= 0) {
 		double r = std::min (a.r, b.r); return r * r * PI; }
-	double x = (d * d + a.r * a.r - b.r * b.r) / (2 * d), t1 = acos (min (1., max (-1., x / a.r))), t2 = acos (min (1., max (-1., (d - x) / b.r)));
+	double x = (d * d + a.r * a.r - b.r * b.r) / (2 * d), t1 = acos (std::min (1., std::max (-1., x / a.r))), t2 = acos (std::min (1., std::max (-1., (d - x) / b.r)));
 	return a.r * a.r * t1 + b.r * b.r * t2 - d * a.r * sin (t1); }
 std::vector <point> circle_intersect (cc a, cc b) {
 	if (a.c == b.c || cmp (dis (a.c, b.c), a.r + b.r) > 0 || cmp (dis (a.c, b.c), std::abs (a.r - b.r)) < 0) return std::vector <point> ();
