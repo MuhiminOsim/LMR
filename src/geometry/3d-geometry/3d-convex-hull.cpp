@@ -29,7 +29,7 @@ struct convex_hull3 {
 			point3 tmp = det (p[i] - p[0], p[i] - p[1]);
 			if (sgn (dis (tmp))) {
 				std::swap (p[i], p[2]);
-				for (int j = 3; j < n; ++ j)
+				for (int j = 3; j < n; ++j)
 					if (sgn (volume (p[0], p[1], p[2], p[j]))) {
 						std::swap (p[j], p[3]); return; } } } }
 	void build_convex () {
@@ -37,4 +37,3 @@ struct convex_hull3 {
 		face.emplace_back (0, 1, 2);
 		face.emplace_back (0, 2, 1);
 		for (int i = 3; i < n; ++i) add(i); } };
-

@@ -52,7 +52,7 @@ struct dinic {
 	int bfs (flow_edge_list &e) {
 		std::fill (d, d + n, -1);
 		int l, r; q[l = r = 0] = s, d[s] = 0;
-		for (; l <= r; l ++)
+		for (; l <= r; ++l)
 			for (int k = e.begin[q[l]]; ~k; k = e.next[k])
 				if (!~d[e.dest[k]] && e.flow[k] > 0) d[e.dest[k]] = d[q[l]] + 1, q[++r] = e.dest[k];
 		return ~d[t] ? 1 : 0; }
