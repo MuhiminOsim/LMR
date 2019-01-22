@@ -27,7 +27,7 @@ struct minimum_cost_flow {
 		while (augment (e)) {
 			int num = INF;
 			for (int i = t; i != s; i = e.dest[prev[i] ^ 1])
-				num = std::min (num, e.flow[prev[i]]); 
+				num = std::min (num, e.flow[prev[i]]);
 			ans.first += num;
 			for (int i = t; i != s; i = e.dest[prev[i] ^ 1]) {
 				e.flow[prev[i]] -= num; e.flow[prev[i] ^ 1] += num;
@@ -66,9 +66,9 @@ struct zkw_flow {
 		return flow - left; }
 	std::pair <int, int> solve (cost_flow_edge_list &e, int n_, int s_, int t_) {
 		n = n_; s = s_; t = t_; tf = tc = 0;
-		std::fill (dis + 1, dis + t + 1, 0);
+		std::fill (dis + 1, dis + n + 1, 0);
 		do { do {
-			std::fill (visit + 1, visit + t + 1, 0);
+			std::fill (visit + 1, visit + n + 1, 0);
 		} while (dfs (e, s, INF)); } while (!modlable ());
 		return std::make_pair (tf, tc);
 	} };

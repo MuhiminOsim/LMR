@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1547537363 "main.tex" "main.pdf" "main" 1547537369
+["pdflatex"] 1548161857 "main.tex" "main.pdf" "main" 1548161862
   "LICENSE" 1537145687 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535731339 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535731824 3332 103109f5612ad95229751940c61aada0 ""
@@ -156,9 +156,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535736463 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535736524 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535736447 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1547537369 23321 bd4fb04c5492cf7fee24e50230d3de62 ""
+  "main.aux" 1548161862 23321 bd4fb04c5492cf7fee24e50230d3de62 ""
   "main.tex" 1540976363 11182 cda00329d0a060676c533e629004d0bc ""
-  "main.toc" 1547537369 11913 be024596bb594d8f6c39c559ab7bf468 ""
+  "main.toc" 1548161862 11913 be024596bb594d8f6c39c559ab7bf468 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1539235643 5837 d62c9b1704dd45f9ff0a55c9a30d61dc ""
   "src/appendix/table-of-integrals.tex" 1537145687 18833 2885a6481ced15594041126e1389c309 ""
@@ -216,7 +216,7 @@
   "src/graph/cut/tarjan.tex" 1537145687 162 483940e88e219e3026305fe3f9acc30e ""
   "src/graph/flow/maximum-flow.cpp" 1547537323 3310 418ba396db60ede0d60ba0b7cb857701 ""
   "src/graph/flow/maximum-flow.tex" 1537145687 128 93510af7998d496125b52470d982d925 ""
-  "src/graph/flow/minimum-cost-flow.cpp" 1538632895 3448 04ec8daae3c02bcee01739057b35ccd5 ""
+  "src/graph/flow/minimum-cost-flow.cpp" 1548033495 3447 d4f5c8d64e94543d191c4b05f2931588 ""
   "src/graph/flow/minimum-cost-flow.tex" 1537145687 129 bd9ad486e9934910e7a82e76f978d2ad ""
   "src/graph/graph.cpp" 1537145687 697 4dad159f2380e7c76de965c544359a8b ""
   "src/graph/graph.tex" 1537145687 41 1d7d5a665af1d8f19096bd80a003c385 ""
@@ -285,7 +285,7 @@
   "src/mathematics/sequence-manipulation/discrete-fourier-transform.tex" 1537145687 116 15a8d1504ab1a15d1e671043656b0cf8 ""
   "src/mathematics/sequence-manipulation/fast-walsh-hadamard-transform.cpp" 1537145687 452 2a08775479e535ba0ca1f4ba0c75fa3f ""
   "src/mathematics/sequence-manipulation/fast-walsh-hadamard-transform.tex" 1537145687 144 da02af41997d631116c2b57adf16005e ""
-  "src/mathematics/sequence-manipulation/number-theoretic-transform.cpp" 1540974906 1849 fe808d01f084cd3ca4acee5aba57a36e ""
+  "src/mathematics/sequence-manipulation/number-theoretic-transform.cpp" 1548040543 1821 014fafcdc11779bf44e01f30a5f4b375 ""
   "src/mathematics/sequence-manipulation/number-theoretic-transform.tex" 1537145687 251 40080d7cac71b108e251f5c94f9bdcc4 ""
   "src/mathematics/sequence-manipulation/polynomial-operation.cpp" 1537145687 2144 0d24fe0ea2f5be1875d5892d0eb8792a ""
   "src/mathematics/sequence-manipulation/polynomial-operation.tex" 1537145687 784 3d9929cce2a7287a65effa5cf7229062 ""
@@ -315,7 +315,7 @@
   "src/system/stack-hack.tex" 1537145687 290 0f567aa592efd9e03cff3b46d7e75f06 ""
   "src/system/time-hack.tex" 1537145687 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
-  "main.pdf"
   "main.aux"
   "main.log"
   "main.toc"
+  "main.pdf"
