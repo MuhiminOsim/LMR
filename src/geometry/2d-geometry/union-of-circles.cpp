@@ -3,8 +3,7 @@ template <int MAXN = 500> struct union_circle {
 	struct event {
 		point p; double ang; int delta;
 		event (cp p = point (), double ang = 0, int delta = 0) : p(p), ang(ang), delta(delta) {}
-		bool operator < (const event &a) { return ang < a.ang; }
-	};
+		bool operator < (const event &a) { return ang < a.ang; } };
 	void addevent(cc a, cc b, std::vector <event> &evt, int &cnt) {
 		double d2 = dis2 (a.c, b.c), d_ratio = ((a.r - b.r) * (a.r + b.r) / d2 + 1) / 2,
 			p_ratio = msqrt (std::max (0., -(d2 - sqr(a.r - b.r)) * (d2 - sqr(a.r + b.r)) / (d2 * d2 * 4)));
@@ -30,4 +29,3 @@ template <int MAXN = 500> struct union_circle {
 					cnt += evt[j].delta; area[cnt] += det(evt[j].p, evt[j + 1].p) / 2;
 					double ang = evt[j + 1].ang - evt[j].ang; if (ang < 0) ang += PI * 2;
 					area[cnt] += ang * c[i].r * c[i].r / 2 - sin(ang) * c[i].r * c[i].r / 2; } } } } };
-

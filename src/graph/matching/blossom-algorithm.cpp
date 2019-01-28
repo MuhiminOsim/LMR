@@ -1,10 +1,10 @@
-template <int MAXN = 500, int MAXM = 250000> 
+template <int MAXN = 500, int MAXM = 250000>
 struct blossom {
 	int match[MAXN], d[MAXN], fa[MAXN], c1[MAXN], c2[MAXN], v[MAXN], q[MAXN];
 	int *qhead, *qtail;
 	struct {
 		int fa[MAXN];
-		void init (int n) { for(int i = 1; i <= n; i++) fa[i] = i; }
+		void init (int n) { for(int i = 0; i < n; i++) fa[i] = i; }
 		int find (int x) { if (fa[x] != x) fa[x] = find (fa[x]); return fa[x]; }
 		void merge (int x, int y) { x = find (x); y = find (y); fa[x] = y; } } ufs;
 	void solve (int x, int y) {
@@ -42,7 +42,7 @@ struct blossom {
 					} else {
 						fa[dest] = loc; fa[match[dest]] = dest;
 						d[dest] = 1; d[match[dest]] = 0;
-						*qtail++ = match[dest]; 
+						*qtail++ = match[dest];
 					} else if (d[ufs.find (dest)] == 0) {
 						int b = lca (loc, dest, root);
 						contract (loc, dest, b); contract (dest, loc, b); } } }
@@ -50,7 +50,6 @@ struct blossom {
 	int solve (int n, const edge_list <MAXN, MAXM> &e) {
 		std::fill (fa, fa + n, 0); std::fill (c1, c1 + n, 0);
 		std::fill (c2, c2 + n, 0); std::fill (match, match + n, -1);
-		int re = 0; for (int i = 0; i < n; i++) 
+		int re = 0; for (int i = 0; i < n; i++)
 			if (match[i] == -1) if (bfs (i, n, e)) ++re; else match[i] = -2;
 		return re; } };
-
