@@ -161,6 +161,10 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/esint.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/esint/esint.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -464,6 +468,7 @@ INPUT src/mathematics/computation/zellers-congruence.cpp
 INPUT src/mathematics/computation/zellers-congruence.cpp
 INPUT src/mathematics/dynamic-programming/dynamic-programming.tex
 INPUT src/mathematics/dynamic-programming/dynamic-programming.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT src/mathematics/equality-and-inequality/baby-step-giant-step.tex
 INPUT src/mathematics/equality-and-inequality/baby-step-giant-step.tex
 INPUT src/mathematics/equality-and-inequality/baby-step-giant-step.cpp
@@ -638,6 +643,7 @@ INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
