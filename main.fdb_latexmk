@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1550246573 "main.tex" "main.pdf" "main" 1550246577
+["pdflatex"] 1550247042 "main.tex" "main.pdf" "main" 1550247076
   "LICENSE" 1537145687 1093 46a8cebcf97629527ceec69eb0f2c696 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1535731339 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535731824 3332 103109f5612ad95229751940c61aada0 ""
@@ -160,9 +160,9 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535736463 2913278 8705261e42bce24cf31f0900b633b274 ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535736524 4217499 fda4c91ad5410734bea2fc174ab14733 ""
   "c:/texlive/2018/texmf.cnf" 1535736447 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1550246577 23387 26a98de7a5599584dbdc972a865b82d6 ""
+  "main.aux" 1550247045 23387 26a98de7a5599584dbdc972a865b82d6 ""
   "main.tex" 1548831089 11210 36a0f2a1601eb854a2267399ce4f4737 ""
-  "main.toc" 1550246577 11961 191031b5b35f4a74bc2ed4f00774dc30 ""
+  "main.toc" 1550247045 11961 191031b5b35f4a74bc2ed4f00774dc30 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "src/appendix/table-of-formulae.tex" 1539235643 5837 d62c9b1704dd45f9ff0a55c9a30d61dc ""
   "src/appendix/table-of-integrals.tex" 1537145687 18833 2885a6481ced15594041126e1389c309 ""
@@ -289,7 +289,7 @@
   "src/mathematics/sequence-manipulation/discrete-fourier-transform.tex" 1537145687 116 15a8d1504ab1a15d1e671043656b0cf8 ""
   "src/mathematics/sequence-manipulation/fast-walsh-hadamard-transform.cpp" 1537145687 452 2a08775479e535ba0ca1f4ba0c75fa3f ""
   "src/mathematics/sequence-manipulation/fast-walsh-hadamard-transform.tex" 1537145687 144 da02af41997d631116c2b57adf16005e ""
-  "src/mathematics/sequence-manipulation/number-theoretic-transform.cpp" 1550246484 1227 d3192378cca8d3ef0da7dda56a1b0b49 ""
+  "src/mathematics/sequence-manipulation/number-theoretic-transform.cpp" 1550247016 1213 b2d6d6c275b6ee29eb6f30439f945744 ""
   "src/mathematics/sequence-manipulation/number-theoretic-transform.tex" 1550246450 115 b68aea60e2a9100982cda87c5d19a332 ""
   "src/mathematics/sequence-manipulation/polynomial-operation.cpp" 1537145687 2144 0d24fe0ea2f5be1875d5892d0eb8792a ""
   "src/mathematics/sequence-manipulation/polynomial-operation.tex" 1537145687 784 3d9929cce2a7287a65effa5cf7229062 ""
@@ -320,6 +320,6 @@
   "src/system/time-hack.tex" 1537145687 172 7d6463e09f3b066153cc15d1a3f1ca74 ""
   (generated)
   "main.aux"
-  "main.log"
   "main.pdf"
   "main.toc"
+  "main.log"
