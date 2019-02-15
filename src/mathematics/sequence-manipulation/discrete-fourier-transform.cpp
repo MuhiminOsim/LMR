@@ -20,4 +20,26 @@ struct dft {
 					a[j + k] = A + B;
 					a[j + k + (i >> 1)] = A - B; }
 		if (f == 1) {
-				for (int i = 0; i < n; ++i) a[i] = complex (a[i].real () / n, a[i].imag ()); } } };
+				for (int i = 0; i < n; ++i) a[i] = complex (a[i].real () / n, a[i].imag ()); } }
+	void multiply (int *a, int *b, int *c, int n, int mod) {
+		const int L = 15, MASK = (1 << L) - 1;
+		static complex A[MAXN], B[MAXN], C[MAXN], D[MAXN];
+		for (int i = 0; i < n; ++i) {
+			A[i] = complex (a[i] >> L, a[i] & MASK);
+			B[i] = complex (b[i] >> L, b[i] & MASK); }
+		solve (A, n, 0), solve (B, n, 0);
+		for (int i = 0; i < n; ++i) {
+			int j = (n - i) % n;
+			complex da = (A[i] - std::conj(A[j])) * complex(0, -0.5),
+				db = (A[i] + std::conj(A[j])) * complex(0.5, 0),
+				dc = (B[i] - std::conj(B[j])) * complex(0, -0.5),
+				dd = (B[i] + std::conj(B[j])) * complex(0.5, 0);
+			C[j] = da * dd + da * dc * complex(0, 1);
+			D[j] = db * dd + db * dc * complex(0, 1); }
+		solve (C, n, 0), solve (D, n, 0);
+		for (int i = 0; i < n; ++i) {
+			long long da = (long long) (C[i].imag () / n + 0.5) % mod,
+				db = (long long) (C[i].real () / n + 0.5) % mod,
+				dc = (long long) (D[i].imag () / n + 0.5) % mod,
+				dd = (long long) (D[i].real () / n + 0.5) % mod;
+		c[i] = ((dd << (L * 2)) + ((db + dc) << L) + da) % mod; } } };

@@ -20,20 +20,4 @@ struct ntt {
 				pB = A - B >= 0 ? A - B : A - B + mod; }
 		if (f == 1) {
 			int rev = fpm (n, mod - 2, mod);
-			for (int i = 0; i < n; ++i) a[i] = int (1ll * a[i] * rev % mod); } }
-	int crt (int *a, int mod) {
-		static int inv[3][3];
-		for (int i = 0; i < 3; ++i) for (int j = 0; j < 3; ++j)
-			inv[i][j] = (int) inverse (MOD[i], MOD[j]);
-		static int x[3];
-		for (int i = 0; i < 3; ++i) { x[i] = a[i];
-			for (int j = 0; j < i; ++j) {
-				int t = (x[i] - x[j] + MOD[i]) % MOD[i];
-				if (t < 0) t += MOD[i];
-				x[i] = int (1LL * t * inv[j][i] % MOD[i]); } }
-		int sum = 1, ret = x[0] % mod;
-		for (int i = 1; i < 3; ++i) {
-			sum = int (1LL * sum * MOD[i - 1] % mod);
-			ret += int (1LL * x[i] * sum % mod);
-			if (ret >= mod) ret -= mod; }
-		return ret; } };
+			for (int i = 0; i < n; ++i) a[i] = int (1ll * a[i] * rev % mod); } } };
