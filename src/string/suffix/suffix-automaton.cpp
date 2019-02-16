@@ -3,9 +3,9 @@ struct suffix_automaton {
 	struct state {
 		int len, first, cnt; state *parent, *go[MAXC];
 		state (int len = 0, int first = 0, int cnt = 0) : len (len), first (first), cnt (cnt), parent (0) {
-			std::fill (go, go + MAXC, 0); } } node_pool[MAXN * 2], *tot_node, *start, *null;
+			std::fill (go, go + MAXC, nullptr); } } node_pool[MAXN * 2], *tot_node, *start, *null;
 	state *extend (state *tail, int token) {
-		state *p = tail; state *np = tail -> go[token] ? null : new (*tot_node++) state (tail -> len + 1, tail -> len, 1);
+		state *p = tail; state *np = tail -> go[token] ? null : new (tot_node++) state (tail -> len + 1, tail -> len, 1);
 		while (p && !p -> go[token]) p -> go[token] = np, p = p -> parent;
 		if (!p) np -> parent = start;
 		else {
@@ -18,10 +18,13 @@ struct suffix_automaton {
 					p -> go[token] = nq, p = p -> parent; } } }
 		return np == null ? np -> parent : np; }
 	void calc_cnt () {
-		static state *list[MAXN * 2]; state **end = list;
-		for (state *it = node_pool; it != tot_node; *(end++) = it++);
-		std::sort (list, end, [&] (state *a, state *b) { return a -> len > b -> len; });
-		for (state **it = list, it != end; ++it) (*it) -> parent -> cnt += (*it) -> cnt; }
+		static int cnt[MAXN * 2]; static state *list[MAXN * 2];
+		int tot = (int) (tot_node - node_pool);
+		std::fill (cnt, cnt + tot, 0);
+		for (state *it = node_pool; it != tot_node; ++cnt[it++ -> len]);
+		for (int i = tot - 2; i >= 0; --i) cnt[i] += cnt[i + 1];
+		for (state *it = node_pool; it != tot_node; ++it) list[--cnt[it -> len]] = it;
+		for (int i = 0; i < tot; ++i) if (list[i] -> parent) list[i] -> parent -> cnt += list[i] -> cnt; }
 	void init () {
 		tot_node = node_pool; start = new (tot_node++) state (); null = new state (); }
 	suffix_automaton () { init (); } };
