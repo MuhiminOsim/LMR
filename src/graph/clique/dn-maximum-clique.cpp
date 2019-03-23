@@ -53,8 +53,3 @@ void degree_sort (vertices & R) {
 max_clique (const BB *conn, const int sz, const float tt = .025) : pk (0), level (1), Tlimit (tt) {
 	for(int i = 0; i < sz; i++) V.push_back (vertex (i));
 	e = conn, C.resize (sz + 1), S.resize (sz + 1); } };
-
-BB e[N]; int ans, sol[N]; for (...) e[x][y] = e[y][x] = true;
-max_clique mc (e, n); mc.mcqdyn (sol, ans);	//0-based.
-for (int i = 0; i < ans; ++i) std::cout << sol[i] << std::endl;
-
